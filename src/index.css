@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+
+/*===== VARIABLES CSS =====*/
+:root {
+  --font-semi: 600;
+
+  --first-color: #ececec;
+  --second-color: #265df2;
+  --background-color: #0f172a;
+  --dark-blue : #0e1420;
+  --blue-navy: #0E1442;
+  --linear-background: linear-gradient(45deg, #9c0e9c, #191970);
+
+  --body-font: 'Space Grotesk', "Poppins", sans-serif;
+  --z-fixed: 100;
+}
+
+
+
+/*===== BASE =====*/
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  color: var(--second-color);
+  background-color: var(--background-color);
+  cursor: none;
+}
+
+a, button {
+  text-decoration: none;
+  cursor: none;
+}
+
+/*===== RÉUTILISABLE =====*/
+
+.container {
+  margin-top: 150px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+.title {
+  display: inline-block;
+  position: relative;
+  font-size: 2.2rem;
+}
+
+.title::after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 5px;
+  border-radius: 5px;
+  width: 100%;
+  background: var(--linear-background);
+  margin-top: 4px;
+}
+
+
+/*===== CURSEUR PERSONNALISÉ =====*/
+
+.curseur-perso {
+   width: 30px;
+   height: 30px;
+   border: 3px solid var(--second-color);
+   border-radius: 50%;
+   position: absolute;
+   pointer-events: none;
+   z-index: 1000;
+}
+
+.curseur-perso::before {
+   content: "";
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width : 7px; 
+   height: 7px;
+   background: darkred; 
+   border-radius: 50%;
+}
+
+.hidden {
+  display: none;
+}

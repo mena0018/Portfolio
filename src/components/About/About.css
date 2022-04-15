@@ -1,0 +1,28 @@
+.container-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.biographie {
+    padding: 30px;
+    color: var(--first-color);
+    font-size: 1.3rem;
+    max-width: 70%;
+    margin: 50px auto 0;
+    text-align: justify;
+}
+
+@media screen and (max-width: 900px) {
+    .container-about {
+        display: block; 
+         width: 100%;
+    }
+}
+
+@media screen and (max-width:450px) {
+   .biographie {
+     padding:0;
+     max-width: 80%;
+   }
+}

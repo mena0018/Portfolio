@@ -1,0 +1,13 @@
+.btn-contact {
+   margin: 150px 0;
+   padding: 15px 35px;
+   background-color: var(--second-color);
+   border: none;
+   border-radius: 20px;
+   box-shadow: 0 0 5px 4px rgb(0, 0, 139, 0.2);
+}
+
+.btn-contact a {
+   font-size: 1.5rem;
+   color: var(--first-color);
+}
