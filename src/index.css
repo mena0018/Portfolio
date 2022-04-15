@@ -37,12 +37,13 @@ body {
   font-size: var(--normal-font-size);
   color: var(--second-color);
   background-color: var(--background-color);
-  cursor: none;
+  /* cursor: none; */
 }
 
 a, button {
   text-decoration: none;
   cursor: none;
+  cursor: pointer;
 }
 
 /*===== RÉUTILISABLE =====*/
@@ -73,33 +74,4 @@ a, button {
   width: 100%;
   background: var(--linear-background);
   margin-top: 4px;
-}
-
-
-/*===== CURSEUR PERSONNALISÉ =====*/
-
-.curseur-perso {
-   width: 30px;
-   height: 30px;
-   border: 3px solid var(--second-color);
-   border-radius: 50%;
-   position: absolute;
-   pointer-events: none;
-   z-index: 1000;
-}
-
-.curseur-perso::before {
-   content: "";
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   width : 7px; 
-   height: 7px;
-   background: darkred; 
-   border-radius: 50%;
-}
-
-.hidden {
-  display: none;
 }
