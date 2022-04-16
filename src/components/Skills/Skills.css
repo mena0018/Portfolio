@@ -2,7 +2,7 @@
    display: grid;
    grid-template-columns: repeat(3, 1fr);
    grid-gap: 100px;
-   margin: 100px 0;
+   margin-top: 100px;
 }
 
 .container-skill {
@@ -17,7 +17,7 @@
 .subtitle {
     font-size: 1.6rem;
     color: var(--first-color);
-    margin: 30px 0;
+    margin-top: 30px;
 }
 
 .container-skill ul {
@@ -28,16 +28,21 @@
 
 .container-skill li {
    display: flex;
-   justify-content: ;
    flex-shrink: 0;
+   width: 100%;
+}
+
+.container-skill ul {
+   margin: 15px 0;
 }
 
 .content-stack {
+   width: 100%;
    display: flex;
+   justify-content: center;
    align-items: center;
-   margin: 10px auto;
+   margin-top: 10px;
    transition: transform 0.2s ease-in;
-   background-color: transparent;
 }
 
 .content-stack svg {

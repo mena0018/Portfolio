@@ -27,7 +27,7 @@ export default function Skills() {
         opacity: 1,
         y: 0,
         delay: delay || 0.4,
-        duration: duration || 0.6,
+        duration: duration || 0.5,
         scrollTrigger: {
           trigger: element,
           start: "top center",
@@ -39,8 +39,8 @@ export default function Skills() {
 
   useEffect(() => {
     slideY(ref.current[0],  200,  0.1);
-    slideY(ref.current[1],  200,   0.3);
-    slideY(ref.current[2],  200, 0.5);
+    slideY(ref.current[1],  200,  0.3);
+    slideY(ref.current[2],  200,  0.5);
   }, []);
 
   return (
@@ -51,17 +51,17 @@ export default function Skills() {
         <div ref={addToRef}>
           <Skill
             name="Front-End"
-            stacks={["CSS / SCSS", "GSAP", "JavaScript", "React.Js"]}
+            stacks={["CSS / SCSS", "Tailwind", "React", "GSAP"]}
           />
         </div>
         <div ref={addToRef}>
           <Skill
             name="Back-End"
-            stacks={["PHP", "Symfony", "API Platform", "Node.Js"]}
+            stacks={["API Platform", "Symfony", "Node", "PHP"]}
           />
         </div>
         <div ref={addToRef}>
-          <Skill name="Outils" stacks={["Git", "GitHub", "MySQL", "Figma"]} />
+          <Skill name="Outils" stacks={["Git / GitHub", "Webpack", "MySQL", "Figma"]} />
         </div>
       </div>
     </div>
