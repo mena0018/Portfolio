@@ -11,7 +11,7 @@ export default function Navbar() {
         <nav>
           <ul
             onClick={btnClick}
-            className={isActive ? "liste-nav active" : "liste-nav"}
+            className={`liste-nav ${isActive ? "active" : "" }`}
           >
             <li className="item-nav">
               <a href="#home" className="nav-link">
@@ -43,10 +43,8 @@ export default function Navbar() {
       </div>
 
       <div
-        className={
-          isActive ? "btn-responsive-menu active" : "btn-responsive-menu"
-        }
         onClick={btnClick}
+        className={`btn-responsive-menu ${isActive ? "active" : ""} `}
       >
         <div className="lignes"></div>
         <div className="lignes"></div>

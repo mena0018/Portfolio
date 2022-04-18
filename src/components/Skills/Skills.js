@@ -1,68 +1,30 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useEffect } from "react";
 import "./Skills.css";
 import Skill from "./Skill";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { ScrollToPlugin } from "gsap/ScrollToPlugin";
-
-gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
+import useSlideY from "../../components/Hook/useSlideY";
+import useAddRef from "../../components/Hook/useAddRef";
+import { dataSkills } from "../constants";
 
 export default function Skills() {
-  let ref = useRef([]);
-
-  const addToRef = (element) => {
-    if (element && !ref.current.includes(element)) {
-      ref.current.push(element);
-    }
-  };
-
-  const slideY = (element, valeurDepart, delay, duration) => {
-    gsap.fromTo(
-      element,
-      {
-        opacity: 0,
-        y: valeurDepart || -200,
-      },
-      {
-        opacity: 1,
-        y: 0,
-        delay: delay || 0.4,
-        duration: duration || 0.5,
-        scrollTrigger: {
-          trigger: element,
-          start: "top center",
-          end: "bottom center",
-        },
-      }
-    );
-  };
+  const { ref, addToRef } = useAddRef();
+  const slideY = useSlideY();
 
   useEffect(() => {
-    slideY(ref.current[0],  200,  0.1);
-    slideY(ref.current[1],  200,  0.3);
-    slideY(ref.current[2],  200,  0.5);
-  }, []);
+    slideY(ref.current[0], 200, 0.1);
+    slideY(ref.current[1], 200, 0.3);
+    slideY(ref.current[2], 200, 0.5);
+  }, [slideY, ref]);
 
   return (
     <div className="container" id="skills">
       <h1 className="title">Compétences</h1>
 
       <div className="container-skills">
-        <div ref={addToRef}>
-          <Skill
-            name="Front-End"
-            stacks={["CSS / SCSS", "Tailwind", "React", "GSAP"]}
-          />
-        </div>
-        <div ref={addToRef}>
-          <Skill
-            name="Back-End"
-            stacks={["API Platform", "Symfony", "Node", "PHP"]}
-          />
-        </div>
-        <div ref={addToRef}>
-          <Skill name="Outils" stacks={["Git / GitHub", "Webpack", "MySQL", "Figma"]} />
-        </div>
+        {dataSkills.map((item, index) => (
+          <div ref={addToRef} key={index}>
+            <Skill name={item.name} stacks={item.stacks} />
+          </div>
+        ))}
       </div>
     </div>
   );
