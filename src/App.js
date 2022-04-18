@@ -20,7 +20,7 @@ function App() {
     slideX(ref.current[1]);
     slideX(ref.current[2]);
     slideY(ref.current[3]);
-  });
+  }, [slideX, slideY, ref]);
 
   return (
     <>
