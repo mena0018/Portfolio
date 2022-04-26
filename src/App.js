@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import Navbar from "./components/Navbar/Navbar";
+import ToggleLang from "./components/ToggleLangs.js/ToggleLang";
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
 import Skills from "./components/Skills/Skills";
@@ -9,6 +10,8 @@ import Footer from "./components/Footer/Footer";
 import useAddRef from "./components/Hook/useAddRef";
 import useSlideX from "./components/Hook/useSlideY";
 import useSlideY from "./components/Hook/useSlideY";
+import ContextProvider from "./context/langContext"; 
+
 
 function App() {
   const { ref, addToRef } = useAddRef();
@@ -23,7 +26,8 @@ function App() {
   }, [slideX, slideY, ref]);
 
   return (
-    <>
+   <ContextProvider>
+      <ToggleLang />
       <Navbar />
       <Home />
       <div ref={addToRef}> <About /></div>
@@ -31,7 +35,7 @@ function App() {
       <div ref={addToRef}> <ProjectList /></div>
       <div ref={addToRef}> <Contact /></div>
       <Footer />
-    </>
+    </ContextProvider>
   );
 }
 

@@ -73,6 +73,7 @@ nav {
     height: 40px;
     display: none;
     z-index: calc(var(--z-fixed) + 1);
+    cursor: pointer;
 }
 
 .btn-responsive-menu .lignes {

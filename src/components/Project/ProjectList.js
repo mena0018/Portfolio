@@ -1,13 +1,16 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useContext } from "react";
+import { Context } from "../../context/langContext";
 import "./Project.css";
 import ProjectItem from "./ProjectItem";
 import useSlideX from "../../components/Hook/useSlideX";
 import useAddRef from "../../components/Hook/useAddRef";
-import {data} from '../constants'
+import { dataProjects } from '../../constants/project'
+import { dataTitle } from "../../constants/title"
 
 
 export default function ProjectList() {
   const { ref, addToRef } = useAddRef();
+  const {lang} = useContext(Context);
   const slideX = useSlideX();
 
   useEffect(() => {
@@ -21,10 +24,10 @@ export default function ProjectList() {
 
   return (
     <div className="container container-top" id="realisations">
-      <h1 className="title">Réalisations</h1>
+      <h1 className="title">{dataTitle[lang]['realisations']}</h1>
 
       <div className="container-realisations">
-        {data.map((item, index) => (
+        {dataProjects[lang].map((item, index) => (
           <div ref={addToRef} key={index}>
             <ProjectItem
               title={item.title}

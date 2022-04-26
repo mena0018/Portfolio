@@ -1,8 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
+import { Context } from "../../context/langContext";
 import "./Navbar.css";
+import { navbarData } from "../../constants/navbar";
+
 
 export default function Navbar() {
+
   const [isActive, setIsActive] = useState(false);
+  const { lang } = useContext(Context);
   const btnClick = () => setIsActive(!isActive);
 
   return (
@@ -11,33 +16,15 @@ export default function Navbar() {
         <nav>
           <ul
             onClick={btnClick}
-            className={`liste-nav ${isActive ? "active" : "" }`}
+            className={`liste-nav ${isActive ? "active" : ""}`}
           >
-            <li className="item-nav">
-              <a href="#home" className="nav-link">
-                Accueil
-              </a>
-            </li>
-            <li className="item-nav">
-              <a href="#about" className="nav-link">
-                À propos
-              </a>
-            </li>
-            <li className="item-nav">
-              <a href="#skills" className="nav-link">
-                Compétences
-              </a>
-            </li>
-            <li className="item-nav">
-              <a href="#realisations" className="nav-link">
-                Réalisations
-              </a>
-            </li>
-            <li className="item-nav">
-              <a href="#contact" className="nav-link">
-                Contact
-              </a>
-            </li>
+            {navbarData[lang].map((item, index) => (
+              <li className="item-nav" key={index}>
+                <a href={item.id} className="nav-link">
+                  {item.title}
+                </a>
+              </li>
+            ))}
           </ul>
         </nav>
       </div>

@@ -1,13 +1,19 @@
-import React, {useEffect } from "react";
+import React, { useEffect, useContext } from "react";
+import { Context } from "../../context/langContext";
 import "./About.css";
 import profilImg from "../../img/webp/profil.webp";
 import useSlideX from "../../components/Hook/useSlideX";
 import useAddRef from "../../components/Hook/useAddRef";
+import { aboutData } from "../../constants/about"
+import { dataTitle } from "../../constants/title"
 
 
 export default function About() {
+
   const { ref, addToRef } = useAddRef();
   const slideX = useSlideX();
+  const { lang } = useContext(Context);
+
 
   useEffect(() => {
     slideX(ref.current[0], 1000);
@@ -16,7 +22,7 @@ export default function About() {
 
   return (
     <div className="container" id="about">
-      <h1 className="title">À propos</h1>
+      <h1 className="title">{dataTitle[lang]['about']}</h1>
       <div className="container-about" ref={addToRef}>
         <div className="profil-img">
           <img src={profilImg} alt="Bitmoji Snapchat" />
@@ -24,14 +30,7 @@ export default function About() {
 
         <div className="biographie" ref={addToRef}>
           <p>
-            J'ai découvert le monde du web en 2020, ce qui m'a motivé à
-            entreprendre des études me permettant d'apprendre à coder.
-            Concernant mon parcours scolaire, je suis en DUT Informatique et je
-            serais en Licence Professionnelle développement web à partir de
-            Septembre 2022. Pour appuyer les enseignements vus en DUT j'ai
-            également suivi des formations telles que l'École du Web ou encore
-            OpenClassroom. Finalement, pour me décrire je dirais que je suis
-            quelqu'un de curieux, organisé et qui aime travailler en équipe.
+           {aboutData[lang]['text']}
           </p>
         </div>
       </div>

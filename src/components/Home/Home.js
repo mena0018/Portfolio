@@ -1,4 +1,5 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useContext } from "react";
+import { Context } from "../../context/langContext";
 import "./Home.css";
 import formSVG from "../../img/blob.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -6,12 +7,16 @@ import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import useSlideX from "../Hook/useSlideX";
 import useSlideY from "../Hook/useSlideY";
 import useAddRef from "../Hook/useAddRef";
+import { homeData } from "../../constants/home";
+
 
 export default function Home() {
 
   const { ref, addToRef } = useAddRef();
   const slideX = useSlideX();
   const slideY = useSlideY();
+  const { lang } = useContext(Context);
+
 
   useEffect(() => {
     slideY(ref.current[3]);
@@ -20,17 +25,17 @@ export default function Home() {
     slideX(ref.current[1], -1000, 1.3, 0.6, "top center", "bottom left");
   }, [slideX, ref, slideY]);
 
+
   return (
     <div className="Home" id="home" ref={addToRef}>
       <div className="container-presentation">
-        <p className="text-presentation">
-          Salut,
-          <br /> je suis
-          <span> Rabie, </span>
-          Développeur Web.
-        </p>
+        <div className="text-presentation">
+           <p> {homeData[lang]['first']}  </p>
+           <p> {homeData[lang]['second']} <span>Rabie,</span> </p>
+           <p> {homeData[lang]['third']}  </p>
+        </div>
         <button className="btn-home" type="button" ref={addToRef}>
-          <a href="#about">Me découvrir </a>
+          <a href="#about">{homeData[lang]['btn']} </a>
         </button>
         <div className="link-social-media" ref={addToRef}>
           <span>
