@@ -3,6 +3,7 @@ import { Context } from "../../context/langContext";
 import "./About.css";
 import profilImg from "../../img/webp/profil.webp";
 import useSlideX from "../../components/Hook/useSlideX";
+import useSlideY from "../../components/Hook/useSlideY";
 import useAddRef from "../../components/Hook/useAddRef";
 import { aboutData } from "../../constants/about"
 import { dataTitle } from "../../constants/title"
@@ -12,17 +13,19 @@ export default function About() {
 
   const { ref, addToRef } = useAddRef();
   const slideX = useSlideX();
+  const slideY = useSlideY();
   const { lang } = useContext(Context);
 
 
   useEffect(() => {
-    slideX(ref.current[0], 1000);
+    slideY(ref.current[0], -100, 0.1);
     slideX(ref.current[1], -1000);
-  }, [slideX, ref]);
+    slideX(ref.current[2], 1000);
+  }, [slideX,slideY, ref]);
 
   return (
     <div className="container" id="about">
-      <h1 className="title">{dataTitle[lang]['about']}</h1>
+      <h1 className="title"  ref={addToRef}>{dataTitle[lang]['about']}</h1>
       <div className="container-about" ref={addToRef}>
         <div className="profil-img">
           <img src={profilImg} alt="Bitmoji Snapchat" />

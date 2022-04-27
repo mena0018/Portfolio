@@ -7,7 +7,8 @@
   height: 100%;
   grid-template-rows: 1fr;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 60px;
+  /* column-gap: 60px; */
+  column-gap: 100px;
   align-items: center;
   padding: 0 20px;
   margin-top: 150px;
@@ -39,6 +40,10 @@
   color: var(--first-color);
 }
 
+.svg-form {
+  margin-top: 50px;
+}
+
 .link-social-media svg {
   width: 30px;
   height: 30px;
@@ -50,6 +55,7 @@
 .link-social-media svg:hover {
   color: var(--second-color);
 }
+
 
 @media screen and (max-width: 950px) {
   .Home {

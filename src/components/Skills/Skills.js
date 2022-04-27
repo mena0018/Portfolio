@@ -14,14 +14,15 @@ export default function Skills() {
   const {lang} = useContext(Context)
 
   useEffect(() => {
-    slideY(ref.current[0], 200, 0.1);
+    slideY(ref.current[0], -200, 0.1);
     slideY(ref.current[1], 200, 0.3);
-    slideY(ref.current[2], 200, 0.5);
+    slideY(ref.current[2], 200, 0.4);
+    slideY(ref.current[3], 200, 0.5);
   }, [slideY, ref]);
 
   return (
     <div className="container" id="skills">
-      <h1 className="title">{dataTitle[lang]['skills']}</h1>
+      <h1 className="title" ref={addToRef}>{dataTitle[lang]['skills']}</h1>
 
       <div className="container-skills">
         {dataSkills[lang].map((item, index) => (
