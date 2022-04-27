@@ -18,9 +18,9 @@ export default function About() {
 
 
   useEffect(() => {
-    slideY(ref.current[0], -100, 0.1);
-    slideX(ref.current[1], -1000);
-    slideX(ref.current[2], 1000);
+    slideY(ref.current[0], -100);
+    slideX(ref.current[1], -1000, 0.5, 0.6);
+    slideX(ref.current[2], 1000, 0.5, 0.6);
   }, [slideX,slideY, ref]);
 
   return (

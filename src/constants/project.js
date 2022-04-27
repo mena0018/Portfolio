@@ -1,4 +1,4 @@
-import WebgestionV2 from "../img/webp/webgestion-v2.webp";
+import WebgestionV2 from "../img/webp/webgestion-v22.webp";
 import ReactAlbum from "../img/webp/react-album.webp";
 import Pronotes from "../img/webp/pronote.webp";
 import GitHubAPI from "../img/webp/github-api.webp";
@@ -24,7 +24,7 @@ export const dataProjects = {
     {
       title: "Pronotes",
       description:
-        "Permet de classer et trier des notes. Réalisé avec Node.js.",
+        "Permet de classer et trier des notes. Tests unitaires réalisés avec Jest.",
       img: Pronotes,
       url: "https://github.com/mena0018/Pronotes-JS",
     },
@@ -68,7 +68,7 @@ export const dataProjects = {
    {
      title: "Pronotes",
      description:
-       "Allows to classify and sort notes. Made with Node.js.",
+       "Allows to classify and sort notes. Unit test made with Jest.",
      img: Pronotes,
      url: "https://github.com/mena0018/Pronotes-JS",
    },

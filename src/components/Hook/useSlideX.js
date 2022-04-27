@@ -16,8 +16,8 @@ export default function useSlideX() {
       {
         opacity: 1,
         x: 0,
-        delay: delay || 0.4,
-        duration: duration || 0.6,
+        delay: delay || 0.2,
+        duration: duration || 0.4,
         scrollTrigger: {
           trigger: element,
           start: start || "top center",
@@ -28,3 +28,8 @@ export default function useSlideX() {
   };
   return slideX;
 }
+
+gsap.config({
+   nullTargetWarn: false,
+   trialWarn: false,
+});

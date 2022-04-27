@@ -28,3 +28,8 @@ export default function useSlideY() {
   };
   return slideY;
 }
+
+gsap.config({
+   nullTargetWarn: false,
+   trialWarn: false,
+});
