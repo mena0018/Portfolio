@@ -6,18 +6,20 @@ gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 export default function useSlideY() {
   
-  const slideY = (element, valeurDepart, delay, duration) => {
+  const slideY = (element, valeurDepart, delay, duration, rotation) => {
     gsap.fromTo(
       element,
       {
         opacity: 0,
         y: valeurDepart || -200,
+        rotation : 0,
       },
       {
         opacity: 1,
         y: 0,
         delay: delay || 0.4,
         duration: duration || 0.5,
+        rotation: rotation || 0,
         scrollTrigger: {
           trigger: element,
           start: "top center",

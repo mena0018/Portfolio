@@ -18,23 +18,25 @@ export default function About() {
 
 
   useEffect(() => {
-    slideY(ref.current[0], -100);
+    slideY(ref.current[0], -100, 0.1);
     slideX(ref.current[1], -1000, 0.5, 0.6);
     slideX(ref.current[2], 1000, 0.5, 0.6);
   }, [slideX,slideY, ref]);
 
   return (
     <div className="container" id="about">
-      <h1 className="title"  ref={addToRef}>{dataTitle[lang]['about']}</h1>
-      <div className="container-about" ref={addToRef}>
+
+      <h1 className="title" ref={addToRef}>
+         {dataTitle[lang]['about']}
+      </h1>
+      
+      <div className="container-about">
         <div className="profil-img">
-          <img src={profilImg} alt="Bitmoji Snapchat" />
+          <img src={profilImg} alt="Bitmoji Snapchat" ref={addToRef} />
         </div>
 
         <div className="biographie" ref={addToRef}>
-          <p>
-           {aboutData[lang]['text']}
-          </p>
+          <p>{aboutData[lang]['text']}</p>
         </div>
       </div>
     </div>
