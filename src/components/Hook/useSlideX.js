@@ -11,7 +11,7 @@ export default function useSlideX() {
       element,
       {
         opacity: 0,
-        x: valeurDepart || -1000,
+        x: valeurDepart || -1500,
       },
       {
         opacity: 1,

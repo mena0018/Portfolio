@@ -26,6 +26,7 @@ export default function Home() {
   }, [slideX, ref, slideY]);
 
 
+
   return (
     <div className="Home" id="home" ref={addToRef}>
       <div className="container-presentation">

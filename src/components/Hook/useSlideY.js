@@ -20,6 +20,7 @@ export default function useSlideY() {
         delay: delay || 0.4,
         duration: duration || 0.5,
         rotation: rotation || 0,
+        stagger: 0.2,
         scrollTrigger: {
           trigger: element,
           start: "top center",
