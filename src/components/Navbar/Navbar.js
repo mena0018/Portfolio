@@ -2,20 +2,18 @@ import React, { useState, useContext, useEffect } from "react";
 import { Context } from "../../context/langContext";
 import "./Navbar.css";
 import { navbarData } from "../../constants/navbar";
-import useSlideY from "../Hook/useSlideY";
 
 
 export default function Navbar() {
 
   const [isActive, setIsActive] = useState(false);
   const { lang } = useContext(Context);
-  const slideY = useSlideY()
   
   const btnClick = () => setIsActive(!isActive);
 
-  useEffect(() => {
-      slideY("li", -200, 2)
-  })
+//   useEffect(() => {
+//       slideY("li", -200, 2)
+//   })
 
   return (
     <>
