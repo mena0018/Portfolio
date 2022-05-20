@@ -56,14 +56,14 @@
    justify-content: space-between;
 }
 
-.content-project .project-title::after {
+
+.span-title::after {
    content: "";
-   position: absolute;
    bottom: 0;
    display: block;
    height: 5px;
    border-radius: 5px;
-   width: 30%;
+   width: 100%;
    background: var(--linear-background);
 }
 
@@ -139,10 +139,6 @@
 
    .content-project .project-title svg {
       margin: 0 2px;
-   }
-   
-   .content-project .project-title::after {
-      width: 40%;
    }
 
    .project-description {

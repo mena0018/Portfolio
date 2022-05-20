@@ -15,7 +15,8 @@ export default function ProjectItem({ img, title, description, githubURL, icons 
 
       <div className="content-project">
         <h2 className="project-title">
-          {title}
+          <span className="span-title"> {title}</span>
+         
           <a target="_blank" rel="noreferrer" href={githubURL}>
             <FontAwesomeIcon icon={faGithub} />
           </a>
