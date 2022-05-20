@@ -50,36 +50,53 @@
 .content-project .project-title {
    margin: 10px 0;
    justify-self: flex-start;
-   display: inline-block;
+   display: flex;
    position: relative;
+   width: 100%;
+   justify-content: space-between;
+}
+
+.content-project .project-title::after {
+   content: "";
+   position: absolute;
+   bottom: 0;
+   display: block;
+   height: 5px;
+   border-radius: 5px;
+   width: 30%;
+   background: var(--linear-background);
+}
+
+.content-project .project-title:nth-child(6)::after {
+   width: 40%;
+   background: #000;
+}
+
+.content-project .project-title p {
+   margin-left: auto;
 }
 
 .content-project .project-title svg {
    width: 25px;
    height: 25px;
    color: var(--first-color);
-   transition: color 0.2s ease-out;
+   transition: 
+      color 0.2s ease-out,
+      transform 0.2s ease-out;
 }
 
 .content-project .project-title svg:hover {
    color: var(--second-color);
 }
 
-.content-project .project-title svg {
-   margin: 0 50px;
-   color: var(--first-color);
+.content-project .project-title p svg:hover {
+   color: var(--violet);
+   transform: scale(1.5);
 }
 
-
-.content-project .project-title::after {
-   content: "";
-   position: absolute;
-   display: block;
-   height: 5px;
-   border-radius: 5px;
-   width: 50%;
-   background: var(--linear-background);
-   margin: 4px auto;
+.content-project .project-title svg {
+   margin: 0 5px;
+   color: var(--first-color);
 }
 
 .project-description {
@@ -97,25 +114,37 @@
 @media screen and (max-width:600px) {
    .container-realisations {
       grid-template-columns: 1fr;
-      margin: 100px 60px;
+      margin: 100px 30px;
    }
    .project-item .bloc-img {
       height: 64%;
+   }
+   .content-project .project-title::after {
+      margin: -5px 0;
    }
 }
 
 @media screen and (max-width:450px) {
    .container-realisations {
       grid-template-columns: 1fr;
-      margin: 100px 30px;
+      margin: 100px 15px;
    }
    .container-top {
       margin-top: 200px;
    }
 
-   .content-project .project-title svg {
-      margin: 0 20px;
+   .project-title a {
+      display: none;
    }
+
+   .content-project .project-title svg {
+      margin: 0 2px;
+   }
+   
+   .content-project .project-title::after {
+      width: 40%;
+   }
+
    .project-description {
       margin: 0 10px;
    }

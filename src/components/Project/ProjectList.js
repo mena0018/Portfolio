@@ -37,6 +37,7 @@ export default function ProjectList() {
               description={item.description}
               img={item.img}
               githubURL={item.url}
+              icons={item.icons}
             />
           </div>
         ))}
