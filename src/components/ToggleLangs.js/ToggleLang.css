@@ -45,7 +45,7 @@
   width: 35px;
   height: 35px;
   cursor: pointer;
-  transition: transform 1s ease;
+  transition: transform 0.4s ease;
 }
 
 .logo-settings:hover {
@@ -64,4 +64,21 @@
 
 .items.active {
   visibility: visible;
+}
+
+.toggle-theme-btn {
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 10px;
+  width: 50px;
+  /* height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.toggle-theme-btn svg {
+  width: 40px;
+  height:40px
 }
