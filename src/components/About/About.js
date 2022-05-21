@@ -2,9 +2,9 @@ import React, { useEffect, useContext } from "react";
 import { Context } from "../../context/langContext";
 import "./About.css";
 import profilImg from "../../img/webp/profil.webp";
-import useSlideX from "../../components/Hook/useSlideX";
-import useSlideY from "../../components/Hook/useSlideY";
-import useAddRef from "../../components/Hook/useAddRef";
+import useSlideX from "../../hook/useSlideX";
+import useAddRef from "../../hook/useAddRef"
+import useSlideY from "../../hook/useSlideY";
 import { aboutData } from "../../constants/about"
 import { dataTitle } from "../../constants/title"
 

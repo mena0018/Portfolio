@@ -2,8 +2,8 @@ import "./Contact.css";
 import {useContext, useEffect} from 'react'
 import { Context } from '../../context/langContext'
 import {dataContact} from "../../constants/contact"
-import useSlideY from "../../components/Hook/useSlideY";
-import useAddRef from "../../components/Hook/useAddRef";
+import useSlideY from "../../hook/useSlideY";
+import useAddRef from "../../hook/useAddRef";
 
 export default function Contact() {
 

@@ -4,9 +4,9 @@ import "./Home.css";
 import formSVG from "../../img/blob.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
-import useSlideX from "../Hook/useSlideX";
-import useSlideY from "../Hook/useSlideY";
-import useAddRef from "../Hook/useAddRef";
+import useSlideX from "../../hook/useSlideX";
+import useSlideY from "../../hook/useSlideY";
+import useAddRef from "../../hook/useAddRef";
 import { homeData } from "../../constants/home";
 import { ThemeContext } from "../../context/themeContext";
 

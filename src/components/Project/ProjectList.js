@@ -2,9 +2,9 @@ import React, { useEffect, useContext } from "react";
 import { Context } from "../../context/langContext";
 import "./Project.css";
 import ProjectItem from "./ProjectItem";
-import useSlideX from "../../components/Hook/useSlideX";
-import useSlideY from "../../components/Hook/useSlideY";
-import useAddRef from "../../components/Hook/useAddRef";
+import useSlideX from "../../hook/useSlideX";
+import useSlideY from "../../hook/useSlideY";
+import useAddRef from "../../hook/useAddRef";
 import { dataProjects } from '../../constants/project'
 import { dataTitle } from "../../constants/title"
 

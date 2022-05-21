@@ -2,8 +2,8 @@ import React, { useEffect, useContext } from "react";
 import { Context } from "../../context/langContext";
 import "./Skills.css";
 import Skill from "./Skill";
-import useSlideY from "../../components/Hook/useSlideY";
-import useAddRef from "../../components/Hook/useAddRef";
+import useSlideY from "../../hook/useSlideY";
+import useAddRef from "../../hook/useAddRef";
 import { dataSkills } from "../../constants/skills";
 import { dataTitle } from "../../constants/title"
 
