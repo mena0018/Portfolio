@@ -45,7 +45,7 @@ export default function ToggleLang() {
       <div onClick={handleClick} className={`items ${isActive ? "active" : ""}`}>
 
          <button onClick={toggleTheme} className="toggle-theme-btn">
-            {theme === "light" ? <MdDarkMode /> : <MdOutlineDarkMode />}
+               {theme === "light" ? <MdDarkMode /> : <MdOutlineDarkMode />}
          </button>
 
       </div>

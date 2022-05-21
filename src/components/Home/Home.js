@@ -12,7 +12,7 @@ import { ThemeContext } from "../../context/themeContext";
 
 
 export default function Home() {
-    const { toggleTheme, theme } = useContext(ThemeContext);
+    const { theme } = useContext(ThemeContext);
     console.log(theme)
 
   const { ref, addToRef } = useAddRef();

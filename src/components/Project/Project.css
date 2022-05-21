@@ -30,10 +30,6 @@
    transition: 0.5s;
 }
 
-.project-item .bloc-img img:hover {
-   transform: scale(1.05);
-}
-
 .content-project {
    width: 100%;
    height: 30%;
@@ -80,7 +76,6 @@
 }
 
 .content-project .project-title p svg:hover {
-   color: var(--violet);
    transform: scale(1.5);
 }
 
