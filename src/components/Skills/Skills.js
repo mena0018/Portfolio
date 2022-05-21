@@ -15,8 +15,8 @@ export default function Skills() {
 
   useEffect(() => {
     slideY(ref.current[0], -200, 0.1);
-    slideY(ref.current[1], -200, 0.5);
-    slideY(ref.current[2], -200, 0.7);
+    slideY(ref.current[1], -200, 0.7, 0.5, -180);
+    slideY(ref.current[2], -200, 0.7, 0.5, 180);
   }, [slideY, ref]);
 
   return (
