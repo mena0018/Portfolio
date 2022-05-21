@@ -29,7 +29,7 @@ export default function Skills() {
           <div ref={addToRef} key={index}>
             <Skill name={item.name} stacks={item.stacks} />
           </div>
-        ))}
+          ))}
       </div>
     </div>
   );

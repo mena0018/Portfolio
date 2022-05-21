@@ -12,6 +12,7 @@
   --blue-navy: #0E1442;
   --linear-background: linear-gradient(45deg, #9c0e9c, #191970);
   --violet: #9c0e9c;
+  --purple: #a395e9;
   --body-font: 'Space Grotesk', "Poppins", sans-serif;
   --z-fixed: 100;
 }
@@ -36,6 +37,15 @@ body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   color: var(--second-color);
+  background-color: var(--background-color);
+  transition: .4s;
+}
+
+#light body {
+  background: var(--first-color);
+}
+
+#dark body {
   background-color: var(--background-color);
 }
 

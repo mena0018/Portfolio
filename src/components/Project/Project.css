@@ -1,9 +1,4 @@
-.container-top {
-   margin-top: 200px;
-}
-
 .container-realisations {
-   margin-top: 100px;
    display: grid;
    grid-template-columns: repeat(2, 1fr);
    grid-template-rows: repeat(2, 1fr);
@@ -67,11 +62,6 @@
    background: var(--linear-background);
 }
 
-.content-project .project-title:nth-child(6)::after {
-   width: 40%;
-   background: #000;
-}
-
 .content-project .project-title p {
    margin-left: auto;
 }
@@ -97,6 +87,10 @@
 .content-project .project-title svg {
    margin: 0 5px;
    color: var(--first-color);
+}
+
+.content-project .project-title a {
+   margin-left: 10px;
 }
 
 .project-description {

@@ -26,7 +26,7 @@ export default function ProjectList() {
   }, [slideX, slideY, ref]);
 
   return (
-    <div className="container container-top" id="realisations">
+    <div className="container" id="realisations">
       <h1 className="title" ref={addToRef}>{dataTitle[lang]['realisations']}</h1>
 
       <div className="container-realisations">

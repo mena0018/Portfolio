@@ -1,18 +1,25 @@
 import React from "react";
 import "./Skills.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
+import { BsFillPatchCheckFill } from "react-icons/bs"
+
 
 export default function Skill({ name, stacks }) {
   return (
     <div className="container-skill">
       <h2 className="subtitle"> {name}</h2>
-      <ul>
+      <ul className="list-skills">
         {stacks.map((item, index) => (
-          <li key={index}>
+          <li key={index} className="item-skill">
+
             <div className="content-stack">
-              <FontAwesomeIcon icon={faCircleCheck} />
-              {item}
+              <div>
+                <BsFillPatchCheckFill />
+              </div>
+              <div className="langage-level">
+                <p>{item[0]}</p>
+                <p>{item[1]}</p>
+              </div>
+              
             </div>
           </li>
         ))}

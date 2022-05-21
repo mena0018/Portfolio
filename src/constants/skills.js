@@ -2,29 +2,49 @@ export const dataSkills = {
   FR: [
     {
       name: "Front-End",
-      stacks: ["CSS / SCSS", "Tailwind", "React", "GSAP"],
+      stacks: [
+       [ "HTML", "Avancé"],
+       ["CSS/SCSS","Avancé"],
+       ["JavaScript","Avancé"],
+       ["React", "Intermédiaire"],
+       ["GSAP","Intermédiaire"],
+       ["Git/GitHub","Intermédiaire"],
+      ],
     },
     {
       name: "Back-End",
-      stacks: ["API Platform", "Symfony", "Node", "PHP"],
-    },
-    {
-      name: "Outils",
-      stacks: ["Git / GitHub", "Webpack", "MySQL", "Figma"],
+      stacks: [
+        [ "PHP", "Intermédiaire"],
+        ["MySQL","Intermédiaire"],
+        ["Symfony","Intermédiaire"],
+        ["API", "Intermédiaire"],
+        ["Node","Débutant"],
+        ["Firebase","Débutant"],
+       ],
     },
   ],
   EN: [
     {
       name: "Front-End",
-      stacks: ["CSS / SCSS", "Tailwind", "React", "GSAP"],
+      stacks: [
+       [ "HTML", "Advanced"],
+       ["CSS/SCSS","Advanced"],
+       ["JavaScript","Advanced"],
+       ["React", "Intermediate"],
+       ["GSAP","Intermediate"],
+       ["Git/GitHub","Intermediate"],
+      ],
     },
     {
       name: "Back-End",
-      stacks: ["API Platform", "Symfony", "Node", "PHP"],
-    },
-    {
-      name: "Tools",
-      stacks: ["Git / GitHub", "Webpack", "MySQL", "Figma"],
+      stacks: [
+        ["PHP", "Intermediate"],
+        ["MySQL","Intermediate"],
+        ["Symfony","Intermediate"],
+        ["API", "Intermediate"],
+        ["Node","Beginner"],
+        ["Firebase","Beginner"],
+       ],
     },
   ],
 };
