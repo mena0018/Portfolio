@@ -5,9 +5,52 @@
    border: none;
    border-radius: 20px;
    box-shadow: 0 0 5px 4px rgb(0, 0, 139, 0.2);
+   overflow: hidden;
+   position: relative;
+   cursor: pointer;
 }
 
-.btn-contact a {
+.base {
    font-size: 1.5rem;
    color: var(--first-color);
+}
+
+.btn-contact .marquee {
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: 10;
+   white-space: nowrap;
+   width: 100%;
+   height: 100%;
+   display: flex;
+}
+
+.marquee a {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-shrink: 0;
+   width: 100%;
+   height: 100%;
+   font-size: 1.5rem;
+   color: var(--first-color);
+}
+
+.btn-contact:hover .base {
+   opacity: 0;
+}
+
+.btn-contact:hover .marquee {
+   animation: infiniteSpin 1.5s linear infinite;
+}
+
+@keyframes infiniteSpin {
+   100% {
+      transform: translateX(-100%);
+   }
+}
+
+.btn-contact:hover a {
+   font-style: italic;
 }

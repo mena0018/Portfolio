@@ -21,9 +21,22 @@ export default function Contact() {
       <h1 className="title" ref={addToRef}> Contact</h1>
       <div className="container-contact" ref={addToRef}>
         <button className="btn-contact">
-          <a href="mailto:rabie.menad07@outlook.com">
+          <a href="mailto:rabie.menad07@outlook.com" className="base">
             {dataContact[lang]['text']}
           </a>
+
+          <div className="marquee" aria-hidden="true">
+            <a href="mailto:rabie.menad07@outlook.com">
+              {dataContact[lang]['text']}
+            </a>
+            <a href="mailto:rabie.menad07@outlook.com">
+              {dataContact[lang]['text']}
+            </a>
+            <a href="mailto:rabie.menad07@outlook.com">
+              {dataContact[lang]['text']}
+            </a>
+          </div>
+          
         </button>
       </div>
     </div>
