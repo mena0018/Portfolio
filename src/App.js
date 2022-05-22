@@ -7,7 +7,7 @@ import ProjectList from "./components/Project/ProjectList";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import ContextProvider from "./context/langContext"; 
-import {  ThemeContextProvider } from "./context/themeContext";
+import ThemeContextProvider from "./context/themeContext";
 
 
 function App() {
@@ -15,14 +15,14 @@ function App() {
   return (
     <ThemeContextProvider>
       <ContextProvider>
-          <ToggleLang />
-          <Navbar />
-          <Home />
-          <About />
-          <Skills />
-          <ProjectList />
-          <Contact />
-          <Footer />
+            <ToggleLang />
+            <Navbar />
+            <Home />
+            <About />
+            <Skills />
+            <ProjectList />
+            <Contact />
+            <Footer />
       </ContextProvider>
     </ThemeContextProvider>
   );

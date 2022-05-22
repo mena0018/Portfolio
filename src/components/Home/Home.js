@@ -8,12 +8,9 @@ import useSlideX from "../../hook/useSlideX";
 import useSlideY from "../../hook/useSlideY";
 import useAddRef from "../../hook/useAddRef";
 import { homeData } from "../../constants/home";
-import { ThemeContext } from "../../context/themeContext";
 
 
 export default function Home() {
-    const { theme } = useContext(ThemeContext);
-    console.log(theme)
 
   const { ref, addToRef } = useAddRef();
   const slideX = useSlideX();
@@ -38,7 +35,7 @@ export default function Home() {
            <p> {homeData[lang]['second']} <span>Rabie,</span> </p>
            <p> {homeData[lang]['third']}  </p>
         </div>
-        <button className="btn-home" type="button" ref={addToRef} id={theme}>
+        <button className="btn-home" type="button" ref={addToRef}>
           <a href="#about">{homeData[lang]['btn']} </a>
         </button>
         <div className="link-social-media" ref={addToRef}>

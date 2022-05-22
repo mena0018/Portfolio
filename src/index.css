@@ -41,14 +41,6 @@ body {
   transition: .4s;
 }
 
-#light body {
-  background: var(--first-color);
-}
-
-#dark body {
-  background-color: var(--background-color);
-}
-
 a, button {
   text-decoration: none;
   cursor: pointer;
