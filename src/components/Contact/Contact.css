@@ -9,3 +9,8 @@
    position: relative;
    cursor: pointer;
 }
+
+.btn-contact a {
+   font-size: 1.5rem;
+   color: var(--first-color);
+}
