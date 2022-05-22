@@ -25,7 +25,7 @@ export default function Contact() {
             {dataContact[lang]['text']}
           </a>
 
-          <div className="marquee" aria-hidden="true">
+          <div className="marquee">
             <a href="mailto:rabie.menad07@outlook.com">
               {dataContact[lang]['text']}
             </a>
