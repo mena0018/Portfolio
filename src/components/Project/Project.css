@@ -5,16 +5,19 @@
    grid-gap: 80px;
    margin: 100px 15px 0;
    overflow: hidden;
+   padding: 5px;
 }
+
 
 .project-item {
    width: 100%;
    height: 500px;
    background: var(--blue-navy);
    color: var(--first-color);
-   border-radius: 50px;
+   border-radius: 40px;
    display: block;
    overflow: hidden;
+   box-shadow: 1px 1px 5px 1px var(--blue-shadow);
 }
 
 

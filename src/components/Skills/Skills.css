@@ -81,7 +81,7 @@
 @media screen and (max-width:500px) {
    .container-skill {
       width: 95%;
-      padding: 10px 0px;
+      padding: 40px 10px;
    }
 
    .list-skills .item-skill {
