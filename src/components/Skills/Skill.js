@@ -16,7 +16,7 @@ export default function Skill({ name, stacks }) {
               </div>
               <div className="langage-level">
                 <p>{item[0]}</p>
-                <p>{item[1]}</p>
+                {/* <p>{item[1]}</p> */}
               </div>
               
             </div>

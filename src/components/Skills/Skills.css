@@ -2,14 +2,14 @@
    display: grid;
    grid-template-columns: repeat(2, 1fr);
    grid-gap: 60px;
-   margin: 100px auto;
+   margin: 100px auto 0;
    width: 90%;
 }
 
 .container-skill {
     background: var(--blue-navy);
     color: var(--first-color);
-    padding: 20px;
+    padding: 40px 20px;
     border-radius: 30px;
     font-size: 1.4rem;
     margin: 30px auto;
@@ -18,7 +18,7 @@
 .subtitle {
     font-size: 1.6rem;
     color: var(--first-color);
-    margin: 20px 0 30px;
+    margin-bottom: 30px;
 }
 
 .container-skill ul {
