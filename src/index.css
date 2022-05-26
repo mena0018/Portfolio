@@ -7,15 +7,16 @@
 
   --first-color: #ececec;
   --second-color: #265df2;
-  --blue-shadow: rgba(38, 93, 242, 0.5);
-  --background-color: #0f172a;
+  --blue-shadow: #265df280;
+  --background-color: #04082e;
+  --background: #0f172a; 
   --dark-blue: #0e1420;
   --blue-navy: #141b52;
   --blue-navy-dark: #0e1442;
-  --linear-background: linear-gradient(45deg, #9c0e9c, #191970);
+  --linear-background: linear-gradient(to right, #9c0e9c, #265df2);
   --violet: #9c0e9c;
   --purple: #a395e9;
-  --dark-purple: #8f7ced;
+  --dark-purple: #7764d5;
   --body-font: "Space Grotesk", "Poppins", sans-serif;
   --z-fixed: 100;
 }

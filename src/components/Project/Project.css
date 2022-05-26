@@ -14,10 +14,10 @@
    height: 500px;
    background: var(--blue-navy);
    color: var(--first-color);
-   border-radius: 40px;
+   border-radius: 55px;
    display: block;
    overflow: hidden;
-   box-shadow: 1px 1px 5px 1px var(--blue-shadow);
+   /* box-shadow: 1px 1px 5px 1px var(--blue-shadow); */
 }
 
 
@@ -43,7 +43,7 @@
 }
 
 .content-project .project-title {
-   margin: 10px 0;
+   margin: 5px 0;
    justify-self: flex-start;
    display: flex;
    position: relative;
@@ -60,6 +60,7 @@
    border-radius: 5px;
    width: 100%;
    background: var(--linear-background);
+   margin-top: 5px;
 }
 
 .content-project .project-title p {
@@ -138,7 +139,7 @@
       margin: 0 10px;
    }
    .content-project .project-title {
-      margin: 20px 0;
+      margin: 10px 0;
    }
  
 }
