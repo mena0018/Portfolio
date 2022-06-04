@@ -8,22 +8,40 @@ import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import ContextProvider from "./context/langContext"; 
 import ThemeContextProvider from "./context/themeContext";
+import Loader from "./components/Loader/Loader";
+import { useState, useEffect } from 'react';
 
 
 function App() {
 
+  const [start, setStart] = useState(true)
+
+
+  useEffect(() => {
+      const timer = setTimeout(() => {
+          setStart(false)
+      }, 3500)
+
+      return () => clearTimeout(timer)
+  })
+
+
   return (
     <ThemeContextProvider>
-      <ContextProvider>
-            <ToggleLang />
-            <Navbar />
-            <Home />
-            <About />
-            <Skills />
-            <ProjectList />
-            <Contact />
-            <Footer />
-      </ContextProvider>
+
+      {start ? <Loader /> : 
+        <ContextProvider>
+              <ToggleLang />
+              <Navbar />
+              <Home />
+              <About />
+              <Skills />
+              <ProjectList />
+              <Contact />
+              <Footer />
+        </ContextProvider>
+      }
+
     </ThemeContextProvider>
   );
 }
