@@ -9,7 +9,7 @@ export default function ProjectItem({ img, title, description, githubURL, icons 
     <div className="project-item">
       <div className="bloc-img">
         <a target="_blank" rel="noreferrer" href={githubURL}>
-          <img src={img} alt="Miniature de projet que j'ai pu réaliser"  loading="lazy"/>
+          <img src={img} alt="Miniature de projet que j'ai pu réaliser" />
         </a>
       </div>
 
