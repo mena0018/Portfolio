@@ -20,8 +20,7 @@ export default function useSlideX() {
         duration: duration || 0.4,
         scrollTrigger: {
           trigger: element,
-          start: start || "top center",
-          end: end || "bottom right",
+          start: start || "bottom center",
         },
       }
     );
