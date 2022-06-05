@@ -6,7 +6,7 @@ gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 export default function useSlideX() {
 
-  const slideX = (element, valeurDepart, delay, duration, start, end) => {
+  const slideX = (element, valeurDepart, delay, duration) => {
     gsap.fromTo(
       element,
       {
@@ -20,7 +20,7 @@ export default function useSlideX() {
         duration: duration || 0.4,
         scrollTrigger: {
           trigger: element,
-          start: start || "bottom center",
+          start: "top center",
         },
       }
     );

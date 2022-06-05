@@ -14,7 +14,7 @@ import { useState, useEffect } from 'react';
 
 function App() {
 
-  const [start, setStart] = useState(true)
+  const [start, setStart] = useState(false)
 
 
   useEffect(() => {

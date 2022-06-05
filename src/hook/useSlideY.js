@@ -23,7 +23,7 @@ export default function useSlideY() {
         stagger: 0.2,
         scrollTrigger: {
           trigger: element,
-          start: "bottom center",
+          start: "top center",
         },
       }
     );
