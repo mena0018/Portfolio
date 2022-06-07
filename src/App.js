@@ -14,22 +14,21 @@ import { useState, useEffect } from 'react';
 
 function App() {
 
-  const [start, setStart] = useState(false)
+  const [loader, setLoader] = useState(true)
 
 
   useEffect(() => {
       const timer = setTimeout(() => {
-          setStart(false)
+          setLoader(false)
       }, 3000)
 
       return () => clearTimeout(timer)
   })
 
 
-  return (
-    <ThemeContextProvider>
+  return loader ?  <Loader /> : (
 
-      {start ? <Loader /> : 
+    <ThemeContextProvider>
         <ContextProvider>
               <ToggleLang />
               <Navbar />
@@ -40,8 +39,6 @@ function App() {
               <Contact />
               <Footer />
         </ContextProvider>
-      }
-
     </ThemeContextProvider>
   );
 }
