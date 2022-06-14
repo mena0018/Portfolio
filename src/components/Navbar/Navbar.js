@@ -14,8 +14,9 @@ export default function Navbar() {
 
   return (
     <>
+      <ProgressBar />
       <div className="nav">
-        <nav>
+        <nav  className="nav">
           <ul
             onClick={btnClick}
             className={`liste-nav ${isActive ? "active" : ""}`}
@@ -30,7 +31,6 @@ export default function Navbar() {
           </ul>
         </nav>
       </div>
-      <ProgressBar />
 
       <div
         onClick={btnClick}

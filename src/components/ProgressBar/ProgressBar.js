@@ -1,32 +1,21 @@
 import "./ProgressBar.css"
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
+import useProgressBar from '../../hook/useProgressBar';
 
 
 export default function ProgressBar() {
 
-    const [scroll, setScroll] = useState(0);
-
+  const { scroll, progressBar } = useProgressBar();
 
     useEffect(() => {
-        
-        let progressBarHandler = () => {
-    
-            const totalScroll = document.documentElement.scrollTop;
-            const windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-            const scroll = `${totalScroll / windowHeight}`;
-    
-            setScroll( scroll );
-        }
-
-        window.addEventListener("scroll", progressBarHandler);
-        return () => window.removeEventListener("scroll", progressBarHandler);
+        window.addEventListener("scroll", progressBar);
+        return () => window.removeEventListener("scroll", progressBar);
     });
-
 
 
   return (
     <div className="progressBarContainer">
-        <div className="progressBar" style={{transform: `scale(${scroll}, 1)`, opacity: `${scroll}`}} />
+        <div className="progressBar" style={{transform: `scaleX(${scroll})`, opacity: `${scroll}`}} />
     </div>
   )
 }
