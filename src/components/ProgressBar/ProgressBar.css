@@ -1,0 +1,23 @@
+/* @import "../../../styles/variables";
+@import "../../../styles/mixins"; */
+
+
+.progressBarContainer {
+  position: fixed;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.05);
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 10px;
+  border-radius: 5px;
+}
+
+.progressBar {
+  background:linear-gradient(to right, #9c0e9c, #265df2);
+  transform-origin: top left;
+  transform: scale(0, 0);
+  opacity: 0;
+  height: 10px;
+  border-radius: 5px;
+}

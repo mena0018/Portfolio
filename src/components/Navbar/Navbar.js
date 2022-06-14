@@ -2,6 +2,7 @@ import React, { useState, useContext } from "react";
 import { Context } from "../../context/langContext";
 import "./Navbar.css";
 import { navbarData } from "../../constants/navbar";
+import ProgressBar from '../ProgressBar/ProgressBar';
 
 
 export default function Navbar() {
@@ -10,10 +11,6 @@ export default function Navbar() {
   const { lang } = useContext(Context);
   
   const btnClick = () => setIsActive(!isActive);
-
-//   useEffect(() => {
-//       slideY("li", -200, 2)
-//   })
 
   return (
     <>
@@ -33,6 +30,7 @@ export default function Navbar() {
           </ul>
         </nav>
       </div>
+      <ProgressBar />
 
       <div
         onClick={btnClick}
