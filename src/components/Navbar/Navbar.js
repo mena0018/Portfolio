@@ -3,6 +3,7 @@ import { Context } from "../../context/langContext";
 import "./Navbar.css";
 import { navbarData } from "../../constants/navbar";
 import ProgressBar from '../ProgressBar/ProgressBar';
+import logo from "../../img/icones/logo/logo2.webp"
 
 
 export default function Navbar() {
@@ -21,6 +22,12 @@ export default function Navbar() {
             onClick={btnClick}
             className={`liste-nav ${isActive ? "active" : ""}`}
           >
+            <li className="item-nav" >
+                <a href="#home" className="nav-link">
+                  <img src={logo} alt="Logo" />
+                </a>
+            </li>
+
             {navbarData[lang].map((item, index) => (
               <li className="item-nav" key={index}>
                 <a href={item.id} className="nav-link">
@@ -30,6 +37,12 @@ export default function Navbar() {
             ))}
           </ul>
         </nav>
+      </div>
+
+      <div className="logo">
+        <a href="#home" className="nav-link">
+            <img src={logo} alt="Logo" />
+        </a>
       </div>
 
       <div

@@ -1,9 +1,9 @@
 export const navbarData = {
   FR: [
-    {
-      title: "Accueil",
-      id: "#home",
-    },
+    // {
+    //   title: "Accueil",
+    //   id: "#home",
+    // },
     {
       title: "À propos",
       id: "#about",
@@ -22,10 +22,10 @@ export const navbarData = {
     },
   ],
   EN: [
-    {
-      title: "Home",
-      id: "#home",
-    },
+    // {
+    //   title: "Home",
+    //   id: "#home",
+    // },
     {
       title: "About",
       id: "#about",
