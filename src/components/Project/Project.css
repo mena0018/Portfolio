@@ -23,7 +23,7 @@
 
 .project-item .bloc-img {
    width: 100%;
-   height: 70%;
+   height: 64%;
 }
 
 .project-item .bloc-img img {
@@ -101,27 +101,21 @@
 @media screen and (max-width:900px) {
    .container-realisations {
       grid-template-columns: 1fr;
-      margin: 100px;
+      margin: 100px 25px;
    }
 }
 
 @media screen and (max-width:600px) {
    .container-realisations {
       grid-template-columns: 1fr;
-      margin: 100px 30px;
-   }
-   .project-item .bloc-img {
-      height: 64%;
-   }
-   .content-project .project-title::after {
-      margin: -5px 0;
+      margin: 100px 15px;
    }
 }
 
 @media screen and (max-width:450px) {
    .container-realisations {
       grid-template-columns: 1fr;
-      margin: 100px 15px;
+      margin: 100px 5px;
    }
    .container-top {
       margin-top: 200px;
@@ -141,5 +135,4 @@
    .content-project .project-title {
       margin: 10px 0;
    }
- 
 }
