@@ -1,10 +1,9 @@
 import { useContext, useState } from "react";
 import { Context } from "../../context/langContext";
-import FrenchFlag from "../../img/france2.png";
-import EnglishFlag from "../../img/royaume-uni2.png";
-import Settings from "../../img/settings.svg"
+import FrenchFlag from "../../img/icones/france.webp";
+import EnglishFlag from "../../img/icones/royaume-uni.webp";
+import Settings from "../../img/icones/settings.svg"
 import "./ToggleLang.css";
-// import {MdOutlineDarkMode, MdDarkMode} from "react-icons/md"
 
 
 export default function ToggleLang() {
