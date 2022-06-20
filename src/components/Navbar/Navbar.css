@@ -105,7 +105,9 @@ nav {
 
 .btn-responsive-menu .lignes:nth-child(2) {
    top: 13px;
+   width: 60%;
 }
+
 
 .btn-responsive-menu .lignes:nth-child(3) {
    top: 26px;
