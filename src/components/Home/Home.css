@@ -34,12 +34,6 @@
   transition: transform 0.5s ease-in;
   margin: 30px 0;
 }
-/* #dark .btn-home{
-    background: var(--second-color); 
-}
-#light .btn-home {
-  background: var(--second-color); 
-} */
 
 .btn-home a {
   color: var(--first-color);
@@ -47,6 +41,16 @@
 
 .svg-form {
   margin-top: 50px;
+  animation: rotate 10s linear alternate infinite;
+}
+
+@keyframes rotate {
+  0% { 
+    transform: scale(0.6) rotate(0deg) ;
+  }
+  100% {
+    transform: scale(1) rotate(360deg) ;
+ }
 }
 
 .link-social-media svg {
