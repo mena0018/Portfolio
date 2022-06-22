@@ -12,8 +12,8 @@ export default function Contact() {
    const {lang} = useContext(Context);
 
    useEffect(() => {
-    slideY(ref.current[0], -200, 0.1, 0.5, 360);
-    slideY(ref.current[1], -200, 0.6, 0.5, 360);
+    slideY(ref.current[0], -200, 0.1, 0.5);
+    slideY(ref.current[1], -200, 0.4, 0.5);
    }, [slideY, ref])
 
   return (
