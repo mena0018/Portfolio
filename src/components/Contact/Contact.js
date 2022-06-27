@@ -2,19 +2,19 @@ import "./Contact.css";
 import {useContext, useEffect} from 'react'
 import { Context } from '../../context/langContext'
 import {dataContact} from "../../constants/contact"
-import useSlideY from "../../hook/useSlideY";
+import useSlideX from "../../hook/useSlideX";
 import useAddRef from "../../hook/useAddRef";
 
 export default function Contact() {
 
-   const slideY = useSlideY();
+   const slideX = useSlideX();
    const {ref, addToRef} = useAddRef();
    const {lang} = useContext(Context);
 
    useEffect(() => {
-    slideY(ref.current[0], -200, 0.1, 0.5);
-    slideY(ref.current[1], -200, 0.4, 0.5);
-   }, [slideY, ref])
+    slideX(ref.current[0], -200, 0.1, 0.5);
+    slideX(ref.current[1], -200, 0.4, 0.5);
+   }, [slideX, ref])
 
   return (
     <div className="container" id="contact">

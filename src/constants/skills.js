@@ -5,7 +5,7 @@ export const dataSkills = {
       stacks: [
        ["CSS/SCSS","Avancé"],
        [ "Tailwind", "Intermédiaire"],
-       ["JavaScript","Avancé"],
+       ["TypeScript","Avancé"],
        ["React", "Intermédiaire"],
        ["GSAP","Intermédiaire"],
        ["Git/GitHub","Intermédiaire"],
@@ -29,7 +29,7 @@ export const dataSkills = {
       stacks: [
        ["CSS/SCSS","Advanced"],
        [ "Tailwind", "Intermediate"],
-       ["JavaScript","Advanced"],
+       ["TypeScript","Advanced"],
        ["React", "Intermediate"],
        ["GSAP","Intermediate"],
        ["Git/GitHub","Intermediate"],
