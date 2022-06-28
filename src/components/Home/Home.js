@@ -21,8 +21,8 @@ export default function Home() {
   useEffect(() => {
     slideY(ref.current[3]);
     slideX(ref.current[0], -1000, 0.4, 0.6);
-    slideX(ref.current[2], -1000, 1.4, 0.6);
-    slideX(ref.current[1], -1000, 1.3, 0.6);
+    slideX(ref.current[2], -1000, 1.7, 0.6); // SVG FORM
+    slideX(ref.current[1], -1000, 1.3, 0.6); 
   }, [slideX, ref, slideY]);
 
 
