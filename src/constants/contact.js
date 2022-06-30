@@ -24,7 +24,7 @@ export const dataContact = {
       icon: <BsWhatsapp color="#42a368"/>,
       name: "WhatsApp",
       info: "06-67-86-96-37",
-      link: "https://wa.me/0667869637",
+      link: "https://wa.me/+33667869637",
       contact: "Écris moi"
     },
   ],
@@ -49,7 +49,7 @@ export const dataContact = {
       icon: <BsWhatsapp color="#42a368"/>,
       name: "WhatsApp",
       info: "06-67-86-96-37",
-      link: "https://wa.me/0667869637",
+      link: "https://wa.me/+33667869637",
       contact: "Write me"
     },
   ],
