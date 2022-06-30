@@ -4,6 +4,8 @@ import { Context } from '../../context/langContext'
 import {dataContact} from "../../constants/contact"
 import useSlideX from "../../hook/useSlideX";
 import useAddRef from "../../hook/useAddRef";
+import ContactItem from "./ContactItem";
+
 
 export default function Contact() {
 
@@ -13,20 +15,29 @@ export default function Contact() {
 
    useEffect(() => {
     slideX(ref.current[0], -1500, 0.1, 0.6, "top bottom");
-    slideX(ref.current[1], -1500, 0.4, 0.6, "top bottom");
+    slideX(ref.current[1], -1500, 0.5, 0.6, "top bottom");
+    slideX(ref.current[2], -1500, 0.7, 0.6, "top bottom");
+    slideX(ref.current[3], -1500, 0.9, 0.6, "top bottom");
    }, [slideX, ref])
 
   return (
     <div className="container" id="contact">
       <h1 className="title" ref={addToRef}> Contact</h1>
-      <div className="container-contact" ref={addToRef}>
-        
-        <button className="btn-contact">
-          <a href="mailto:rabie.menad07@outlook.com" className="base">
-            {dataContact[lang]['text']}
-          </a>
-          
-        </button>
+      <div className="list-contact" >
+
+          {dataContact[lang].filter((item) => typeof item === "object")
+              .map((item, index) => 
+
+                <div ref={addToRef} key={index} className="container-contact" >
+                    <ContactItem 
+                        icon={item.icon} 
+                        name={item.name} 
+                        info={item.info} 
+                        link={item.link}
+                        contact={item.contact}
+                    />
+                </div>
+          )}
       </div>
     </div>
   );

@@ -1,16 +1,60 @@
-.btn-contact {
-   margin: 150px 0;
-   padding: 15px 35px;
-   background-color: var(--second-color);
-   border: none;
-   border-radius: 20px;
-   box-shadow: 0 0 5px 4px rgb(0, 0, 139, 0.2);
-   overflow: hidden;
-   position: relative;
-   cursor: pointer;
+.list-contact {
+   width: 100%;
+   height: 100%;
+   padding: 20px;
+   color: var(--first-color);
+   margin: 50px auto;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+   display: flex;
+   gap: 40px ;
 }
 
-.btn-contact a {
-   font-size: 1.5rem;
-   color: var(--first-color);
+.list-contact h1 {
+   font-size: 25px;
 }
+
+.contact-item {
+   width: 300px;
+   height: 200px;
+   background: var(--blue-shadow);
+   margin: 20px 0;
+   border-radius: 10px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;  
+}
+
+.contact-item a {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 30px;
+   color: var(--light-purple);
+}
+
+.contact-item a svg{
+   margin-left: 10px
+}
+
+.contact-item p, .contact-item a{
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 17px;
+}
+
+
+.contact-item p:first-child svg {
+   width: 35px;
+   height: 35px;
+   margin: 10px 0;
+}
+
+@media screen and (max-width: 768px) {
+   .list-contact {
+      gap: 0 40px;
+   }
+}
+   
