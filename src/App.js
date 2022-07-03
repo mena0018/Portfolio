@@ -14,19 +14,20 @@ import { useState, useEffect } from 'react';
 
 function App() {
 
-  const [loader, setLoader] = useState(false)
+  const [loader, setLoader] = useState(null)
 
 
   useEffect(() => {
+    setLoader(true)
       const timer = setTimeout(() => {
           setLoader(false)
       }, 3000)
 
       return () => clearTimeout(timer)
-  })
+  }, [])
 
 
-  return loader ?  <Loader /> : (
+  return loader ? <Loader /> : (
 
     <ThemeContextProvider>
         <ContextProvider>
