@@ -16,7 +16,7 @@ export default function useSlideX() {
       {
         opacity: 1,
         x: 0,
-        delay: delay || 0.2,
+        delay: delay || 0,
         duration: duration || 0.4,
         scrollTrigger: {
           trigger: element,
