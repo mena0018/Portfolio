@@ -1,9 +1,9 @@
-import WebgestionV2 from "../img/webp/webgestion-v22.webp";
-import ReactAlbum from "../img/webp/react-album.webp";
-import Pronotes from "../img/webp/pronote.webp";
-import GitHubAPI from "../img/webp/github-api.webp";
-import TodoListPWA from "../img/webp/todolist-pwa.webp";
-import Chat from "../img/webp/chat.webp";
+import WebgestionV2 from "../img/webp/projects/webgestion-v22.webp";
+import ReactAlbum from "../img/webp/projects/react-album.webp";
+import Pronotes from "../img/webp/projects/pronote.webp";
+import GitHubAPI from "../img/webp/projects//github-api.webp";
+import TodoListPWA from "../img/webp/projects/todolist-pwa.webp";
+import Chat from "../img/webp/projects/chat.webp";
 import { FaReact, FaNodeJs } from 'react-icons/fa';
 import { SiJavascript, SiCss3, SiSymfony, SiJest, SiPwa, SiSocketdotio, SiMysql, SiHtml5 } from "react-icons/si";
 
