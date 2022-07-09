@@ -1,12 +1,13 @@
 import React, { useEffect, useContext } from "react";
 import { Context } from "../../context/langContext";
 import "./About.css";
-import profilImg from "../../img/webp/profil.webp";
+import profilImg from "../../img/webp/about_me/profil.webp";
 import useSlideX from "../../hook/useSlideX";
 import useAddRef from "../../hook/useAddRef"
 import useSlideY from "../../hook/useSlideY";
-import { aboutData } from "../../constants/about"
 import { dataTitle } from "../../constants/title"
+import biographieEn from "../../img/webp/about_me/about_me_en.webp";
+import biographieFr from "../../img/webp/about_me/about_me_fr.webp";
 
 
 export default function About() {
@@ -31,12 +32,14 @@ export default function About() {
       </h1>
       
       <div className="container-about">
+
         <div className="profil-img">
           <img src={profilImg} alt="Bitmoji Snapchat" ref={addToRef} />
         </div>
 
         <div className="biographie" ref={addToRef}>
-          <p>{aboutData[lang]['text']}</p>
+          <img src={lang === 'FR' ? biographieFr : biographieEn}
+               alt="Capture d'écran me décrivant" />
         </div>
       </div>
     </div>
