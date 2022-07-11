@@ -35,12 +35,12 @@
   }
 
   .profil-img {
-    width: 60%;
+    width: 40%;
     margin: 0 auto 100px;
   }
 
   .biographie {
-    width: 85%;
+    width: 65%;
     margin: 0 auto;
   }
 }
@@ -50,12 +50,12 @@
     padding-top: 70px;
   }
 
-  .biographie {
-    width: 95%;
-  }
-
   .profil-img {
-    width: 60%;
+    width: 50%;
     margin: 0 auto 70px;
+  }
+  
+  .biographie {
+    width: 85%;
   }
 }

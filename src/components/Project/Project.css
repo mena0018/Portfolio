@@ -53,7 +53,6 @@
    justify-content: space-between;
 }
 
-
 .span-title::after {
    content: "";
    bottom: 0;
@@ -69,24 +68,25 @@
    margin-left: auto;
 }
 
-.content-project .project-title svg {
+/* Logo GitHub */
+.content-project .project-title a svg:hover {
+  color: var(--second-color);
+}
+
+/* Logo langages de programmations */
+.content-project .project-title p img {
    width: 25px;
    height: 25px;
    color: var(--first-color);
-   transition: 
-      color 0.2s ease-out,
-      transform 0.2s ease-out;
+   transition: color 0.2s ease-out, transform 0.2s ease-out;
+   margin: 0 5px;
 }
 
-.content-project .project-title svg:hover {
-   color: var(--second-color);
-}
-
-.content-project .project-title p svg:hover {
+.content-project .project-title p img:hover {
    transform: scale(1.5);
 }
 
-.content-project .project-title svg {
+.content-project .project-title a svg {
    margin: 0 5px;
    color: var(--first-color);
 }
@@ -99,6 +99,7 @@
    margin: 10px 5px;
    text-align: justify;
 }
+
 
 @media screen and (max-width:900px) {
    .container-realisations {
@@ -127,7 +128,7 @@
       display: none;
    }
 
-   .content-project .project-title svg {
+   .content-project .project-title img {
       margin: 0 2px;
    }
 
