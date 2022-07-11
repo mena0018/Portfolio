@@ -39,10 +39,6 @@
   color: var(--first-color);
 }
 
-.svg-form {
-  margin-top: 50px;
-  animation: rotate 10s linear alternate infinite;
-}
 
 @keyframes rotate {
   0% { 
@@ -66,6 +62,31 @@
 }
 
 
+.vertical-slider {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vertical-slider p {
+    position: absolute;
+    transform: translateY(100px);
+    opacity: 0;
+    visibility: hidden;
+    font-size: 70px;
+    text-align: center;
+    width: 100%;
+    color: #f1f1f1;
+}
+
+
+
 @media screen and (max-width: 950px) {
   .Home {
     grid-template-columns: repeat(3, 1fr);
@@ -85,7 +106,7 @@
 }
 
 @media screen and (max-width: 600px) {
-  .svg-form {
+  .vertical-slider {
     display: none;
   }
   .container-presentation {
