@@ -61,8 +61,13 @@
   color: var(--second-color);
 }
 
+svg-form {
+  margin-top: 50px;
+  animation: rotate 10s linear alternate infinite;
+}
 
-.vertical-slider {
+
+/* .vertical-slider {
   width: 400px;
   height: 400px;
   position: absolute;
@@ -83,7 +88,7 @@
     text-align: center;
     width: 100%;
     color: #f1f1f1;
-}
+} */
 
 
 
@@ -106,7 +111,7 @@
 }
 
 @media screen and (max-width: 600px) {
-  .vertical-slider {
+  .svg-form {
     display: none;
   }
   .container-presentation {
