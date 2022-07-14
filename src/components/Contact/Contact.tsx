@@ -10,11 +10,11 @@ import ContactItem from "./ContactItem";
 export default function Contact() {
 
    const slideX = useSlideX();
-   const {ref, addToRef} = useAddRef();
    const {lang} = useContext(Context);
-
-   let dataToMap: any[] = dataContact[lang];
-
+   
+   let dataToMap: any = dataContact[lang];
+   
+   const {ref, addToRef} = useAddRef<HTMLDivElement>();
    const h1Ref = useRef<HTMLHeadingElement>(null)
 
    useEffect(() => {

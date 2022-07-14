@@ -1,4 +1,6 @@
-export const navbarData: any = {
+import { NavbarType } from '../types/navbar';
+
+export const navbarData: Record<string, NavbarType[]> = {
   FR: [
     {
       title: "À propos",

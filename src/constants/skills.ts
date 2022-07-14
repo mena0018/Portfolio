@@ -1,50 +1,26 @@
-export const dataSkills: any = {
+import { SkillType } from '../types/skill';
+
+export const dataSkills: Record<string, SkillType[]> = {
+
   FR: [
     {
       name: "Front-End",
-      stacks: [
-       ["CSS/SCSS","Avancé"],
-       [ "Tailwind", "Intermédiaire"],
-       ["TypeScript","Avancé"],
-       ["React", "Intermédiaire"],
-       ["GSAP","Intermédiaire"],
-       ["Git/GitHub","Intermédiaire"],
-      ],
+      stacks: ["CSS/SCSS", "Tailwind", "TypeScript", "React", "GSAP", "Git/GitHub"]
     },
     {
       name: "Back-End",
-      stacks: [
-        [ "PHP", "Intermédiaire"],
-        ["MySQL","Intermédiaire"],
-        ["Symfony","Intermédiaire"],
-        ["API", "Intermédiaire"],
-        ["Node","Débutant"],
-        ["Firebase","Débutant"],
-       ],
+      stacks: ["PHP", "MySQL", "Symfony", "API", "Node", "Firebase"]
     },
-  ],
+  ]
+  ,
   EN: [
     {
       name: "Front-End",
-      stacks: [
-       ["CSS/SCSS","Advanced"],
-       [ "Tailwind", "Intermediate"],
-       ["TypeScript","Advanced"],
-       ["React", "Intermediate"],
-       ["GSAP","Intermediate"],
-       ["Git/GitHub","Intermediate"],
-      ],
+      stacks: ["CSS/SCSS", "Tailwind", "TypeScript", "React", "GSAP", "Git/GitHub"]
     },
     {
       name: "Back-End",
-      stacks: [
-        ["PHP", "Intermediate"],
-        ["MySQL","Intermediate"],
-        ["Symfony","Intermediate"],
-        ["API", "Intermediate"],
-        ["Node","Beginner"],
-        ["Firebase","Beginner"],
-       ],
-    },
-  ],
+      stacks: ["PHP", "MySQL", "Symfony", "API", "Node", "Firebase"]
+    }
+  ]
 };

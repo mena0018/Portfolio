@@ -3,7 +3,7 @@ import Gmail from "../img/icones/contact/google-gmail.svg";
 import Linkedin from "../img/icones/contact/linkedin.svg";
 
 
-export const dataContact: any = {
+export const dataContact: Record<string, unknown> = {
   FR: [
     "Me contacter",
     {

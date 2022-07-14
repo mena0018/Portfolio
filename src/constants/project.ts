@@ -11,13 +11,14 @@ import socketIo from "../img/icones/langages/socket.io.svg";
 import pwa from "../img/icones/langages/pwa.svg";
 import symfony from "../img/icones/langages/symfony.svg";
 import mysql from "../img/icones/langages/mysql.svg";
+import { ProjectType } from '../types/project';
 
 
 let css  = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg";
 let html = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg";
 
 
-export const dataProjects: any = {
+export const dataProjects: Record<string, ProjectType[]> = {
   FR: [
     {
       title: "Webgestion V2",

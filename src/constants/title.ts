@@ -1,4 +1,6 @@
-export const dataTitle: any = {
+import { TitleType } from '../types/title';
+
+export const dataTitle: Record<string, TitleType> = {
   FR: {
     about: "À propos",
     skills: "Compétences",
@@ -8,5 +10,5 @@ export const dataTitle: any = {
     about: "About",
     skills: "Skills",
     realisations: "Achievements",
-  },
+  }
 };

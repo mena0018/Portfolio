@@ -1,4 +1,6 @@
-export const aboutData: any = {
+import { AboutType } from "../types/about";
+
+export const aboutData: Record<string, AboutType> = {
   FR: {
     text: "J'ai découvert le monde du web en 2020, ce qui m'a motivé à entreprendre des études me permettant d'apprendre à coder. Concernant mon parcours scolaire, je suis en DUT Informatique et je serai en Licence Professionnelle développement web à partir de Septembre 2022. Pour appuyer les enseignements vus en DUT j'ai également suivi des formations telles que l'École du Web ou encore OpenClassroom. Finalement, pour me décrire je dirais que je suis quelqu'un de curieux, organisé et qui aime travailler en équipe.",
   },

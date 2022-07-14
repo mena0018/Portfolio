@@ -1,13 +1,11 @@
 import { useRef } from "react";
 
-export default function useAddRef() {
-  const ref = useRef([]);
+export default function useAddRef<T=unknown>() {
+  const ref = useRef<T[]>([]);
   
-  // @ts-ignore
-  const addToRef = (element) => {
-  // @ts-ignore
+  const addToRef = (element: T) => {
+
     if (element && !ref.current.includes(element)) {
-        // @ts-ignore
       ref.current.push(element);
     }
   };

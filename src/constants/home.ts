@@ -1,4 +1,6 @@
-export const homeData: any = {
+import { HomeType } from "../types/home";
+
+export const homeData: Record<string, HomeType> = {
   FR: {
     first: "Salut,",
     second: "Je suis",

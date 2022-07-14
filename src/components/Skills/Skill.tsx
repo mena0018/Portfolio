@@ -16,7 +16,7 @@ export default function Skill({ name, stacks } : SkillType) {
                 <BsFillPatchCheckFill />
               </div>
               <div className="langage-level">
-                <p>{item[0]}</p>
+                <p>{item}</p>
               </div>
               
             </div>

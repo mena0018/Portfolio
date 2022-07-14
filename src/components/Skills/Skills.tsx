@@ -11,10 +11,10 @@ import { SkillType } from "../../types/skill";
 
 export default function Skills() {
 
-  const { ref, addToRef } = useAddRef();
   const slideY = useSlideY();
   const {lang} = useContext(Context)
-
+  
+  const { ref, addToRef } = useAddRef<HTMLDivElement>();
   const h1Ref = useRef<HTMLHeadingElement>(null)
 
 

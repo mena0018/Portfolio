@@ -10,12 +10,12 @@ import { dataTitle } from "../../constants/title"
 import { ProjectType } from '../../types/project';
 
 export default function ProjectList() {
-
-  const { ref, addToRef } = useAddRef();
+  
   const {lang} = useContext(Context);
   const slideX = useSlideX();
   const slideY = useSlideY();
-
+  
+  const { ref, addToRef } = useAddRef<HTMLDivElement>();
   const h1Ref = useRef<HTMLHeadingElement>(null)
 
 
