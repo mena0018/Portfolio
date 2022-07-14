@@ -35,7 +35,7 @@
    color: var(--light-purple);
 }
 
-.contact-item a img {
+.contact-item a svg {
    margin-left: 10px
 }
 
