@@ -1,13 +1,10 @@
-import WebgestionV2 from "../img/webp/projects/webgestion-v22.webp";
+import WebgestionV2 from "../img/webp/projects/webgestion-v2.webp";
 import ReactAlbum from "../img/webp/projects/react-album.webp";
 import TodoListPWA from "../img/webp/projects/todolist-pwa.webp";
-import Chat from "../img/webp/projects/chat.webp";
-
+import Ecommerce from "../img/webp/projects/ecommerce.webp";
 
 import javascript from "../img/icones/langages/javascript.svg";
 import react from "../img/icones/langages/react.svg";
-import nodejs from "../img/icones/langages/nodejs.svg";
-import socketIo from "../img/icones/langages/socket.io.svg";
 import pwa from "../img/icones/langages/pwa.svg";
 import symfony from "../img/icones/langages/symfony.svg";
 import mysql from "../img/icones/langages/mysql.svg";
@@ -16,6 +13,7 @@ import { ProjectType } from '../types/project';
 
 let css  = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg";
 let html = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg";
+let redux = "https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg";
 
 
 export const dataProjects: Record<string, ProjectType[]> = {
@@ -26,6 +24,13 @@ export const dataProjects: Record<string, ProjectType[]> = {
       img: WebgestionV2,
       url: "https://github.com/mena0018/WebgestionV2",
       icons:  [ symfony, mysql, javascript, css ]
+    },
+    {
+      title: "E-commerce",
+      description: "Application E-commerce de mugs avec React. Gestion des données au sein de l'application avec Redux",
+      img: Ecommerce,
+      url: "https://github.com/mena0018/E-commerce",
+      icons:  [ javascript, react, redux, css ]
     },
     {
       title: "Music Explorer",
@@ -40,14 +45,7 @@ export const dataProjects: Record<string, ProjectType[]> = {
       img: TodoListPWA,
       url: "https://github.com/mena0018/TodoList-Progressive-Web-App",
       icons:  [ html, css, javascript, pwa ]
-    },
-    {
-      title: "Chat-Socket.Io",
-      description: "Permet de choisir un pseudo, rejoindre une conversation et d'envoyer des messages. Réalisé avec Node.js et Socket.Io",
-      img: Chat,
-      url: "https://github.com/mena0018/Chat-Socket.Io",
-      icons:  [ javascript, nodejs, socketIo, css ]
-    },
+    }
   ],
   EN: [
     {
@@ -56,6 +54,13 @@ export const dataProjects: Record<string, ProjectType[]> = {
       img: WebgestionV2,
       url: "https://github.com/mena0018/WebgestionV2",
       icons:  [ symfony, mysql, javascript, css ] 
+    },
+    {
+      title: "E-commerce",
+      description: "E-commerce Application sellings mugs made with React. Datas transit into the application thanks to Redux.",
+      img: Ecommerce,
+      url: "https://github.com/mena0018/E-commerce",
+      icons:  [ javascript, react, redux, css ]
     },
     {
       title: "Music Explorer",
@@ -71,14 +76,6 @@ export const dataProjects: Record<string, ProjectType[]> = {
       img: TodoListPWA,
       url: "https://github.com/mena0018/TodoList-Progressive-Web-App",
       icons:  [ html, css, javascript, pwa ]
-    },
-    {
-      title: "Chat-Socket.Io",
-      description:
-        "Allows you to choose a nickname, join a conversation and send messages. Made with Node.js and Socket.Io.",
-      img: Chat,
-      url: "https://github.com/mena0018/Chat-Socket.Io",
-      icons:  [ javascript, nodejs, socketIo, css ]
-    },
+    }
   ]
 };
