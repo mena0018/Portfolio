@@ -5,12 +5,12 @@ export const homeData: Record<string, HomeType> = {
     first: "Salut,",
     second: "Je suis",
     third: "Développeur Web.",
-    btn: "Me découvrir",
+    btn: "Me contacter",
   },
   EN: {
     first: "Hey,",
     second: "I'm",
     third: "Web Developer.",
-    btn: "Discover me",
+    btn: "Contact me",
   },
 };

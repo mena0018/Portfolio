@@ -38,7 +38,7 @@ export default function Home() {
            <p> {homeData[lang]['third']}  </p>
         </div>
         <button className="btn-home" type="button" ref={btnRef}>
-          <a href="#about">{homeData[lang]['btn']} </a>
+          <a href="#contact">{homeData[lang]['btn']} </a>
         </button>
         <div className="link-social-media" ref={addToRef}>
           <span>
