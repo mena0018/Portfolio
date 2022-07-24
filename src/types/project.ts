@@ -2,6 +2,6 @@ export type ProjectType = {
   img: string;
   title: string;
   description: string;
-  url: string;
+  url: string[];
   icons: string[];
 };

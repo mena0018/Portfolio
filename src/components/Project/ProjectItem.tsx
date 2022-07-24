@@ -8,7 +8,7 @@ export default function ProjectItem({ img, title, description, url, icons } : Pr
   return (
     <div className="project-item">
       <div className="bloc-img">
-        <a target="_blank" rel="noreferrer" href={url}>
+        <a target="_blank" rel="noreferrer" href={url[1]}>
           <img src={img} alt="Miniature de projet que j'ai pu réaliser" />
         </a>
       </div>
@@ -17,7 +17,7 @@ export default function ProjectItem({ img, title, description, url, icons } : Pr
         <h2 className="project-title">
           <span className="span-title"> {title}</span>
          
-          <a target="_blank" rel="noreferrer" href={url}>
+          <a target="_blank" rel="noreferrer" href={url[0]}>
             <FontAwesomeIcon icon={faGithub} />
           </a>
           <p>
