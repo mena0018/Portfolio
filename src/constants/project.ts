@@ -1,6 +1,6 @@
 import { ProjectType } from '../types/project';
 
-import WebgestionV2 from "../img/webp/projects/webgestion-v2.webp";
+import URLShortening from "../img/webp/projects/url-shortening.webp";
 import CountDown from "../img/webp/projects/countdown.webp";
 import TradingSite from "../img/webp/projects/trading-site.webp";
 import Ecommerce from "../img/webp/projects/ecommerce.webp";
@@ -9,11 +9,7 @@ import javascript from "../img/icones/langages/javascript.svg";
 import typescript from "../img/icones/langages/typescript.svg";
 import react from "../img/icones/langages/react.svg";
 import sass from "../img/icones/langages/sass.svg";
-import symfony from "../img/icones/langages/symfony.svg";
-import mysql from "../img/icones/langages/mysql.svg";
 
-
-let css  = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg";
 let redux = "https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg";
 
 
@@ -27,18 +23,18 @@ export const dataProjects: Record<string, ProjectType[]> = {
       icons:  [ typescript, react, sass]
     },
     {
-      title: "CountDown-Timer",
+      title: "Compte à Rebours",
       description: "Compte à rebours réalisé dans le cadre d'un challenge Frontend-Mentor.",
       img: CountDown,
       url: ["https://github.com/mena0018/Launch-Countdown-timer", "https://launch-countdown-time.netlify.app"],
       icons:  [typescript, react, sass ]
     },
     {
-      title: "Webgestion V2",
-      description: "Répond aux demandes d'un professeur (admin) et/ou d'un élève. Réalisé en Symfony",
-      img: WebgestionV2,
-      url: ["https://github.com/mena0018/WebgestionV2"],
-      icons:  [ symfony, mysql, javascript, css ]
+      title: "URL Shortening",
+      description: "Application de raccourcissement d'URL réalisé dans le cadre d'un challenge Frontend-Mentor.",
+      img: URLShortening,
+      url: ["https://github.com/mena0018/URL-Shortening", "https://url-shortening-virid.vercel.app/"],
+      icons:  [ typescript, react, sass]
     },
     {
       title: "E-commerce",
@@ -64,15 +60,15 @@ export const dataProjects: Record<string, ProjectType[]> = {
       icons:  [ typescript, react, sass ]
     },
     {
-      title: "Webgestion V2",
-      description: "Responds to requests from a teacher (admin) and/or a student. Made with Symfony.",
-      img: WebgestionV2,
-      url: ["https://github.com/mena0018/WebgestionV2"],
-      icons:  [ symfony, mysql, javascript, css ] 
+      title: "URL Shortening",
+      description: "Frontend Mentor challenge focus on the integration of a shortened URLs with the shrtcode API.",
+      img: URLShortening,
+      url: ["https://github.com/mena0018/URL-Shortening", "https://url-shortening-virid.vercel.app/"],
+      icons:  [ typescript, react, sass]
     },
     {
       title: "E-commerce",
-      description: "E-commerce Application sellings mugs made with React. Datas transit into the application thanks to Redux.",
+      description: "E-commerce Application selling mugs made with React. Datas transit into the application thanks to Redux.",
       img: Ecommerce,
       url: ["https://github.com/mena0018/E-commerce"],
       icons:  [ javascript, react, redux, sass ]
