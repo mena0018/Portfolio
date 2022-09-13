@@ -123,19 +123,24 @@
    .container-top {
       margin-top: 200px;
    }
-
    .project-title a {
       display: none;
    }
-
-   .content-project .project-title img {
-      margin: 0 2px;
-   }
-
    .project-description {
       margin: 0 10px;
    }
    .content-project .project-title {
       margin: 10px 0;
+   }
+   .content-project .project-title img {
+      margin: 0 2px;
+   }
+   .content-project .project-title p img {
+      margin: 0;
+      margin-right: 5px;
+   }
+   .content-project {
+      padding: 15px;
+      padding-right: 5px;
    }
 }

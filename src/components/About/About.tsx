@@ -22,8 +22,8 @@ export default function About() {
 
   useEffect(() => {
     slideY(h1Ref.current, -100, 0.1);
-    slideX(imgRef.current, -1000, 0.5, 0.6);
-    slideX(divRef.current, 1000, 0.5, 0.6);
+    slideX(imgRef.current, -1000, 0, 0.4);
+    slideX(divRef.current, 1000, 0, 0.4);
 
   }, [slideX,slideY]);
 

@@ -18,10 +18,10 @@ export default function Contact() {
    const h1Ref = useRef<HTMLHeadingElement>(null)
 
    useEffect(() => {
-    slideX(h1Ref.current,  -1500, 0.1, 0.6, "top bottom");
-    slideX(ref.current[0], -1500, 0.5, 0.6, "top bottom");
-    slideX(ref.current[1], -1500, 0.7, 0.6, "top bottom");
-    slideX(ref.current[2], -1500, 0.9, 0.6, "top bottom");
+    slideX(h1Ref.current,  -1500, 0.1, 0.5, "top bottom");
+    slideX(ref.current[0], -1500, 0.3, 0.5, "top bottom");
+    slideX(ref.current[1], -1500, 0.5, 0.5, "top bottom");
+    slideX(ref.current[2], -1500, 0.7, 0.5, "top bottom");
    }, [slideX, h1Ref, ref])
 
 

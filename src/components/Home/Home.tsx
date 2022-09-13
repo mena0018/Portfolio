@@ -22,11 +22,10 @@ export default function Home() {
 
   useEffect(() => {
     slideY(ref.current[2]);                  // #home
-    slideX(btnRef.current, -1000, 0.4, 0.6); // btn-home
-    slideX(ref.current[0], -1000, 1.3, 0.6); // link-social-media
-    slideX(ref.current[1], -1000, 1.7, 0.6); // SVG FORM
+    slideX(btnRef.current, -1000, 0.1, 0.6); // btn-home
+    slideX(ref.current[0], -1000, 0.4, 0.6); // link-social-media
+    slideX(ref.current[1], -1000, 1, 0.6); // SVG FORM
   }, [slideX, ref, slideY]);
-
 
 
   return (
@@ -46,6 +45,7 @@ export default function Home() {
               target="_blank"
               rel="noreferrer"
               href="https://linkedin.com/in/rabie-menad"
+              aria-label="Linkedin account"
             >
               <FontAwesomeIcon icon={faLinkedin} />
             </a>
@@ -55,6 +55,7 @@ export default function Home() {
               target="_blank"
               rel="noreferrer"
               href="https://github.com/mena0018"
+              aria-label="GitHub account"
             >
               <FontAwesomeIcon icon={faGithub} />
             </a>

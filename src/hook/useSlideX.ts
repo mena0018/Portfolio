@@ -17,7 +17,7 @@ export default function useSlideX() {
         opacity: 1,
         x: 0,
         delay: delay || 0,
-        duration: duration || 0.4,
+        duration: duration || 0.3,
         scrollTrigger: {
           trigger: element,
           start: start || "top center",

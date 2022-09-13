@@ -17,8 +17,8 @@ export default function useSlideY() {
       {
         opacity: 1,
         y: 0,
-        delay: delay || 0.2,
-        duration: duration || 0.5,
+        delay: delay || 0,
+        duration: duration || 0.3,
         rotation: 0,
         stagger: 0.2,
         scrollTrigger: {
