@@ -3,7 +3,7 @@ import { Context } from "../../context/langContext";
 import "./Navbar.css";
 import { navbarData } from "../../constants/navbar";
 import ProgressBar from '../ProgressBar/ProgressBar';
-import logo from "../../img/icones/logo/logo2.webp"
+import logo from "../../img/icones/logo/logoR.webp"
 
 
 export default function Navbar() {
@@ -16,8 +16,8 @@ export default function Navbar() {
   return (
     <>
       <ProgressBar />
-      <div className="nav">
-        <nav className="nav">
+      <div className="nav-container">
+        <nav>
 
           <ul onClick={btnClick}
             className={`liste-nav ${isActive ? "active" : ""}`}>
