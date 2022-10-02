@@ -49,7 +49,7 @@ export const dataProjects: Record<string, ProjectType[]> = {
       title: "Trading-Site",
       description: "Landing Page challenge proposed by Frontend-Mentor.",
       img: TradingSite,
-      url: ["https://github.com/mena0018/Trading-Website", "trading-website-five.vercel.app/"],
+      url: ["https://github.com/mena0018/Trading-Website", "https://trading-website-five.vercel.app/"],
       icons:  [ typescript, react, sass]
     },
     {
