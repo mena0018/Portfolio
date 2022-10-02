@@ -113,6 +113,10 @@
       grid-template-columns: 1fr;
       margin: 100px 15px;
    }
+
+   .project-item .bloc-img img:hover {
+      transform: scale(1);
+   }
 }
 
 @media screen and (max-width:450px) {
