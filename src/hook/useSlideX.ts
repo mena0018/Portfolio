@@ -5,8 +5,13 @@ import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 export default function useSlideX() {
-
-  const slideX = (element: any, valeurDepart?: number, delay?: number, duration?: number, start?: string) => {
+  const slideX = (
+    element: any,
+    valeurDepart?: number,
+    delay?: number,
+    duration?: number,
+    start?: string
+  ) => {
     gsap.fromTo(
       element,
       {
@@ -29,5 +34,5 @@ export default function useSlideX() {
 }
 
 gsap.config({
-   nullTargetWarn: false,
+  nullTargetWarn: false,
 });

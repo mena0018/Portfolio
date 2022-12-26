@@ -1,16 +1,23 @@
-import { BsFillArrowRightCircleFill } from 'react-icons/bs';
-import { ContactType } from '../../types/contact';
+import { BsFillArrowRightCircleFill } from "react-icons/bs";
+import { ContactType } from "../../types/contact";
 
-
-export default function ContactItem( {icon, name, info, link, contact}: ContactType) {
+export default function ContactItem({
+  icon,
+  name,
+  info,
+  link,
+  contact,
+}: ContactType) {
   return (
-    <div className="contact-item">
-        <p>
-          <img src={icon} alt="icônes WhatsApp, Linkedin ou Gmail" />
-        </p>
-        <p>{name}</p>
-        <p>{info}</p>
-        <a target="_blank" rel="noreferrer noopener" href={link}>{contact} <BsFillArrowRightCircleFill /> </a>
-    </div>
-  )
+    <>
+      <p>
+        <img src={icon} alt="icônes WhatsApp, Linkedin ou Gmail" />
+      </p>
+      <p>{name}</p>
+      <p>{info}</p>
+      <a target="_blank" rel="noreferrer noopener" href={link}>
+        {contact} <BsFillArrowRightCircleFill />
+      </a>
+    </>
+  );
 }

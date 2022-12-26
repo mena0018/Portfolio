@@ -5,14 +5,19 @@ import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 export default function useSlideY() {
-  
-  const slideY = (element: any, valeurDepart?: number, delay?: number, duration?: number, rotation?: number) => {
+  const slideY = (
+    element: any,
+    valeurDepart?: number,
+    delay?: number,
+    duration?: number,
+    rotation?: number
+  ) => {
     gsap.fromTo(
       element,
       {
         opacity: 0,
         y: valeurDepart || -200,
-        rotation : rotation || 0,
+        rotation: rotation || 0,
       },
       {
         opacity: 1,
@@ -32,5 +37,5 @@ export default function useSlideY() {
 }
 
 gsap.config({
-   nullTargetWarn: false,
+  nullTargetWarn: false,
 });

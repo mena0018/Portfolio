@@ -1,4 +1,4 @@
-.container-realisations {
+.container-realizations {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -44,8 +44,8 @@
 
 .content-project .project-title {
   margin: 5px 0;
-  justify-self: flex-start;
   display: flex;
+  align-items: center;
   position: relative;
   width: 100%;
   justify-content: space-between;
@@ -99,21 +99,21 @@
 }
 
 @media screen and (max-width: 900px) {
-  .container-realisations {
+  .container-realizations {
     grid-template-columns: 1fr;
     margin: 100px 25px;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .container-realisations {
+  .container-realizations {
     grid-template-columns: 1fr;
     margin: 100px 15px;
   }
 }
 
 @media screen and (max-width: 450px) {
-  .container-realisations {
+  .container-realizations {
     grid-template-columns: 1fr;
     margin: 100px 5px;
   }

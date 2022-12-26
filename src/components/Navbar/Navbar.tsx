@@ -1,16 +1,14 @@
-import React, { useState, useContext } from "react";
+import { useState, useContext } from "react";
 import { Context } from "../../context/langContext";
 import "./Navbar.css";
 import { navbarData } from "../../constants/navbar";
-import ProgressBar from '../ProgressBar/ProgressBar';
-import logo from "../../img/icones/logo/logoR.webp"
-
+import ProgressBar from "../ProgressBar/ProgressBar";
+import logo from "../../img/icones/logo/logoR.webp";
 
 export default function Navbar() {
-
   const [isActive, setIsActive] = useState(false);
   const { lang } = useContext(Context);
-  
+
   const btnClick = () => setIsActive(!isActive);
 
   return (
@@ -18,14 +16,14 @@ export default function Navbar() {
       <ProgressBar />
       <div className="nav-container">
         <nav>
-
-          <ul onClick={btnClick}
-            className={`liste-nav ${isActive ? "active" : ""}`}>
-
-            <li className="item-nav" >
-                <a href="#home" className="nav-link">
-                  <img src={logo} alt="Logo" />
-                </a>
+          <ul
+            onClick={btnClick}
+            className={`liste-nav ${isActive && "active"}`}
+          >
+            <li className="item-nav">
+              <a href="#home" className="nav-link">
+                <img src={logo} alt="Logo" />
+              </a>
             </li>
 
             {navbarData[lang].map((item: any, index: number) => (
@@ -35,22 +33,23 @@ export default function Navbar() {
                 </a>
               </li>
             ))}
-
           </ul>
         </nav>
       </div>
 
       <div className="logo">
         <a href="#home" className="nav-link">
-            <img src={logo} alt="Logo" />
+          <img src={logo} alt="Logo" />
         </a>
       </div>
 
-      <div onClick={btnClick}
-           className={`btn-responsive-menu ${isActive ? "active" : ""} `}>
-            <div className="lignes"></div>
-            <div className="lignes"></div>
-            <div className="lignes"></div>
+      <div
+        onClick={btnClick}
+        className={`btn-responsive-menu ${isActive && "active"}`}
+      >
+        <div className="lignes"></div>
+        <div className="lignes"></div>
+        <div className="lignes"></div>
       </div>
     </>
   );

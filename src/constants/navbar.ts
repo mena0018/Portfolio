@@ -1,4 +1,4 @@
-import { NavbarType } from '../types/navbar';
+import { NavbarType } from "../types/navbar";
 
 export const navbarData: Record<string, NavbarType[]> = {
   FR: [
@@ -12,7 +12,7 @@ export const navbarData: Record<string, NavbarType[]> = {
     },
     {
       title: "Réalisations",
-      id: "#realisations",
+      id: "#realizations",
     },
     {
       title: "Contact",
@@ -30,7 +30,7 @@ export const navbarData: Record<string, NavbarType[]> = {
     },
     {
       title: "Achievements",
-      id: "#realisations",
+      id: "#realizations",
     },
     {
       title: "Contact",

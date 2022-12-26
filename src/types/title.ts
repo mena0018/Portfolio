@@ -1,5 +1,5 @@
 export type TitleType = {
   about: string;
   skills: string;
-  realisations: string;
-}
+  realizations: string;
+};
