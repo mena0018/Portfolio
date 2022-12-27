@@ -12,12 +12,12 @@
   height: 120px;
   border-radius: 50%;
   border: 3px solid transparent;
-  border-top-color: #31708e;
-  animation: spin 2s linear infinite;
+  border-top: 3px solid #5085a5;
+  animation: rotate 2s linear infinite;
 }
 
 .loader::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 5px;
   left: 5px;
@@ -26,11 +26,11 @@
   border-radius: 50%;
   border: 3px solid transparent;
   border-top-color: #5085a5;
-  animation: spin 3s linear infinite;
+  animation: rotate 3s linear infinite;
 }
 
 .loader::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 15px;
   left: 15px;
@@ -39,12 +39,12 @@
   border-radius: 50%;
   border: 3px solid transparent;
   border-top-color: #8fc1e3;
-  animation: spin 1.5s linear infinite;
+  animation: rotate 1.5s linear infinite;
 }
 
-@keyframes spin {
+@keyframes rotate {
   0% {
-    transform: rotate(0);
+    transform: rotate(0deg);
   }
   100% {
     transform: rotate(360deg);
