@@ -1,38 +1,24 @@
-import { SkillType } from "../types/skill";
+import { SkillType } from '../types/skill';
 
 export const dataSkills: Record<string, SkillType[]> = {
   FR: [
     {
-      name: "Front-End",
-      stacks: [
-        "CSS/SCSS",
-        "Tailwind",
-        "TypeScript",
-        "React",
-        "GSAP",
-        "Git/GitHub",
-      ],
+      name: 'Front-End',
+      stacks: ['CSS/SCSS', 'Tailwind', 'TypeScript', 'React', 'Next', 'Jest'],
     },
     {
-      name: "Back-End",
-      stacks: ["PHP", "MySQL", "Symfony", "API", "Node", "Firebase"],
+      name: 'Back-End',
+      stacks: ['PHP', 'Symfony', 'API', 'Node', 'SQL', 'Docker'],
     },
   ],
   EN: [
     {
-      name: "Front-End",
-      stacks: [
-        "CSS/SCSS",
-        "Tailwind",
-        "TypeScript",
-        "React",
-        "GSAP",
-        "Git/GitHub",
-      ],
+      name: 'Front-End',
+      stacks: ['CSS/SCSS', 'Tailwind', 'TypeScript', 'React', 'Next', 'Jest'],
     },
     {
-      name: "Back-End",
-      stacks: ["PHP", "MySQL", "Symfony", "API", "Node", "Firebase"],
+      name: 'Back-End',
+      stacks: ['PHP', 'Symfony', 'API', 'Node', 'SQL', 'Docker'],
     },
   ],
 };
