@@ -52,7 +52,7 @@
 }
 
 .span-title::after {
-  content: "";
+  content: '';
   bottom: 0;
   display: block;
   height: 5px;

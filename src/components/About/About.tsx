@@ -1,12 +1,13 @@
-import { useEffect, useContext, useRef } from "react";
-import { Context } from "../../context/langContext";
-import "./About.css";
-import profilImg from "../../img/webp/about_me/profil.webp";
-import useSlideX from "../../hook/useSlideX";
-import useSlideY from "../../hook/useSlideY";
-import { dataTitle } from "../../constants/title";
-import biographieEn from "../../img/webp/about_me/about_me_en.webp";
-import biographieFr from "../../img/webp/about_me/about_me_fr.webp";
+import './About.css';
+import { useEffect, useContext, useRef } from 'react';
+import { Context } from '../../context/langContext';
+import { dataTitle } from '../../constants/title';
+import profilImg from 'public/img//about_me/profil.webp';
+import useSlideX from '../../hook/useSlideX';
+import useSlideY from '../../hook/useSlideY';
+import biographieEn from 'public/img//about_me/about_me_en.webp';
+import biographieFr from 'public/img//about_me/about_me_fr.webp';
+import Image from 'next/image';
 
 export default function About() {
   const slideX = useSlideX();
@@ -24,19 +25,19 @@ export default function About() {
   }, [slideX, slideY]);
 
   return (
-    <div className="container" id="about">
-      <h1 className="title" ref={h1Ref}>
-        {dataTitle[lang]["about"]}
+    <div className='container' id='about'>
+      <h1 className='title' ref={h1Ref}>
+        {dataTitle[lang]['about']}
       </h1>
 
-      <div className="container-about">
-        <div className="profil-img">
-          <img src={profilImg} alt="Bitmoji Snapchat" ref={imgRef} />
+      <div className='container-about'>
+        <div className='profil-img'>
+          <Image src={profilImg} alt='Bitmoji Snapchat' ref={imgRef} priority />
         </div>
 
-        <div className="biographie" ref={divRef}>
-          <img
-            src={lang === "FR" ? biographieFr : biographieEn}
+        <div className='biographie' ref={divRef}>
+          <Image
+            src={lang === 'FR' ? biographieFr : biographieEn}
             alt="Capture d'écran me décrivant"
           />
         </div>

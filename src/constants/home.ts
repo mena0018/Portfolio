@@ -1,16 +1,16 @@
-import { HomeType } from "../types/home";
+import { HomeType } from '../types/home';
 
 export const homeData: Record<string, HomeType> = {
   FR: {
-    first: "Salut,",
-    second: "Je suis",
-    third: "Développeur Web.",
-    btn: "Me contacter",
+    first: 'Salut,',
+    second: 'Je suis',
+    third: 'Développeur Web.',
+    btn: 'Me contacter',
   },
   EN: {
-    first: "Hey,",
+    first: 'Hey,',
     second: "I'm",
-    third: "Web Developer.",
-    btn: "Contact me",
+    third: 'Web Developer.',
+    btn: 'Contact me',
   },
 };

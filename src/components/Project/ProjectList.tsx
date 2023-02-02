@@ -1,13 +1,13 @@
-import { useEffect, useContext, useRef } from "react";
-import { Context } from "../../context/langContext";
-import "./Project.css";
-import ProjectItem from "./ProjectItem";
-import useSlideX from "../../hook/useSlideX";
-import useSlideY from "../../hook/useSlideY";
-import useAddRef from "../../hook/useAddRef";
-import { dataProjects } from "../../constants/project";
-import { dataTitle } from "../../constants/title";
-import { ProjectType } from "../../types/project";
+import { useEffect, useContext, useRef } from 'react';
+import { Context } from '../../context/langContext';
+import './Project.css';
+import ProjectItem from './ProjectItem';
+import useSlideX from '../../hook/useSlideX';
+import useSlideY from '../../hook/useSlideY';
+import useAddRef from '../../hook/useAddRef';
+import { dataProjects } from '../../constants/project';
+import { dataTitle } from '../../constants/title';
+import { ProjectType } from '../../types/project';
 
 export default function ProjectList() {
   const { lang } = useContext(Context);
@@ -26,12 +26,12 @@ export default function ProjectList() {
   }, [slideX, slideY, ref]);
 
   return (
-    <div className="container" id="realizations">
-      <h1 className="title" ref={h1Ref}>
-        {dataTitle[lang]["realizations"]}
+    <div className='container' id='realizations'>
+      <h1 className='title' ref={h1Ref}>
+        {dataTitle[lang]['realizations']}
       </h1>
 
-      <div className="container-realizations">
+      <div className='container-realizations'>
         {dataProjects[lang].map((item: ProjectType, index: number) => (
           <div ref={addToRef} key={index}>
             <ProjectItem

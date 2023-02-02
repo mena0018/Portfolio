@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
 
 /*===== VARIABLES CSS =====*/
 :root {
@@ -18,7 +18,7 @@
   --purple: #a395e9;
   --light-purple: #c1b5ff;
   --dark-purple: #7764d5;
-  --body-font: "Space Grotesk", "Poppins", sans-serif;
+  --body-font: 'Space Grotesk', 'Poppins', sans-serif;
   --z-fixed: 100;
 }
 
@@ -68,7 +68,7 @@ button {
 }
 
 .title::after {
-  content: "";
+  content: '';
   position: absolute;
   display: block;
   height: 5px;

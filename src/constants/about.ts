@@ -1,4 +1,4 @@
-import { AboutType } from "../types/about";
+import { AboutType } from '../types/about';
 
 export const aboutData: Record<string, AboutType> = {
   FR: {
@@ -6,6 +6,6 @@ export const aboutData: Record<string, AboutType> = {
   },
 
   EN: {
-    text: "I discovered the world of web in 2020, which motivated me to undertake studies to learn to code. Concerning my academic background, I am in DUT Computer Science and I will be in a professional licence specializing in web development starting from September 2022. In order to support the teachings seen in DUT, I also followed trainings such as the École du Web or OpenClassroom. Finally, to describe myself I would say that I am someone curious, organized and who likes to work in a team.",
+    text: 'I discovered the world of web in 2020, which motivated me to undertake studies to learn to code. Concerning my academic background, I am in DUT Computer Science and I will be in a professional licence specializing in web development starting from September 2022. In order to support the teachings seen in DUT, I also followed trainings such as the École du Web or OpenClassroom. Finally, to describe myself I would say that I am someone curious, organized and who likes to work in a team.',
   },
 };

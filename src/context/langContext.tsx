@@ -1,4 +1,4 @@
-import { createContext, useState, ReactNode } from "react";
+import { createContext, useState, ReactNode } from 'react';
 
 type Props = {
   children: ReactNode;
@@ -7,13 +7,11 @@ type Props = {
 export const Context = createContext<any>(null);
 
 const ContextProvider = ({ children }: Props) => {
-  const [lang, setLang] = useState<string>("FR");
+  const [lang, setLang] = useState<string>('FR');
 
   const toggleLang = (langToChange: string) => setLang(langToChange);
 
-  return (
-    <Context.Provider value={{ lang, toggleLang }}>{children}</Context.Provider>
-  );
+  return <Context.Provider value={{ lang, toggleLang }}>{children}</Context.Provider>;
 };
 
 export default ContextProvider;

@@ -1,3 +1,5 @@
+'use client';
+
 import { useState, useEffect } from 'react';
 import Navbar from './components/Navbar/Navbar';
 import ToggleLang from './components/ToggleLangs.js/ToggleLang';

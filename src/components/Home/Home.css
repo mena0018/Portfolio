@@ -60,29 +60,11 @@
   }
 }
 
-@media screen and (max-width: 950px) {
-  .Home {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  .container-presentation {
-    grid-column: 1 / span 2;
-  }
-}
-
 @media screen and (max-width: 700px) {
-  .Home {
-    grid-template-columns: repeat(4, 1fr);
-  }
-  .container-presentation {
-    grid-column: 1 / span 3;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .svg-form {
-    display: none;
-  }
   .container-presentation {
     grid-column: 1 / span 4;
+  }
+  .svg-form {
+    display: none;
   }
 }

@@ -1,15 +1,15 @@
 import { ProjectType } from '../types/project';
 
-import URLShortening from '../img/webp/projects/url-shortening.webp';
-import CountDown from '../img/webp/projects/countdown.webp';
-import TradingSite from '../img/webp/projects/trading-site.webp';
-import Metaversus from '../img/webp/projects/metaversus.webp';
+import URLShortening from '/public/img//projects/url-shortening.webp';
+import CountDown from '/public/img//projects/countdown.webp';
+import TradingSite from '/public/img//projects/trading-site.webp';
+import Metaversus from '/public/img//projects/metaversus.webp';
 
-import typescript from '../img/icones/langages/typescript.svg';
-import react from '../img/icones/langages/react.svg';
-import next from '../img/icones/langages/next-js.svg';
-import sass from '../img/icones/langages/sass.svg';
-import tailwind from '../img/icones/langages/tailwindcss.svg';
+import typescript from '/public/img/icones/langages/typescript.svg';
+import react from '/public/img/icones/langages/react.svg';
+import next from '/public/img/icones/langages/next-js.svg';
+import sass from '/public/img/icones/langages/sass.svg';
+import tailwind from '/public/img/icones/langages/tailwindcss.svg';
 
 export const dataProjects: Record<string, ProjectType[]> = {
   FR: [
@@ -48,8 +48,7 @@ export const dataProjects: Record<string, ProjectType[]> = {
     },
     {
       title: 'Compte à Rebours',
-      description:
-        "Compte à rebours réalisé dans le cadre d'un challenge Frontend-Mentor.",
+      description: "Compte à rebours réalisé dans le cadre d'un challenge Frontend-Mentor.",
       img: CountDown,
       url: [
         'https://github.com/mena0018/Launch-Countdown-timer',
@@ -61,8 +60,7 @@ export const dataProjects: Record<string, ProjectType[]> = {
   EN: [
     {
       title: 'Metaversus',
-      description:
-        'Frontend Mentor challenge focus on a Metaverse Landing Page.',
+      description: 'Frontend Mentor challenge focus on a Metaverse Landing Page.',
       img: Metaversus,
       url: [
         'https://github.com/mena0018/Next-Metaverse',
