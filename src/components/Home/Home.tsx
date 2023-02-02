@@ -1,13 +1,14 @@
-import { useEffect, useContext, useRef } from "react";
-import { Context } from "../../context/langContext";
-import "./Home.css";
-import formSVG from "../../img/blob.svg";
-import { FiGithub, FiLinkedin } from "react-icons/fi";
-import useSlideX from "../../hook/useSlideX";
-import useSlideY from "../../hook/useSlideY";
-import useAddRef from "../../hook/useAddRef";
-import { homeData } from "../../constants/home";
-import { motion } from "framer-motion";
+import './Home.css';
+import { useEffect, useContext, useRef } from 'react';
+import { Context } from '../../context/langContext';
+import { FiGithub, FiLinkedin } from 'react-icons/fi';
+import { homeData } from '../../constants/home';
+import { motion } from 'framer-motion';
+import useAddRef from '../../hook/useAddRef';
+import formSVG from 'public/img/blob.svg';
+import useSlideX from '../../hook/useSlideX';
+import useSlideY from '../../hook/useSlideY';
+import Image from 'next/image';
 
 export default function Home() {
   const slideX = useSlideX();
@@ -25,42 +26,42 @@ export default function Home() {
   }, [slideX, ref, slideY]);
 
   return (
-    <div className="Home" id="home" ref={addToRef}>
-      <div className="container-presentation">
-        <div className="text-presentation">
-          <p> {homeData[lang]["first"]}</p>
+    <div className='Home' id='home' ref={addToRef}>
+      <div className='container-presentation'>
+        <div className='text-presentation'>
+          <p> {homeData[lang]['first']}</p>
           <p>
-            {homeData[lang]["second"]}
+            {homeData[lang]['second']}
             <span> Rabie,</span>
           </p>
-          <p>{homeData[lang]["third"]}</p>
+          <p>{homeData[lang]['third']}</p>
         </div>
         <motion.a
-          href="#contact"
-          className="contact-cta"
+          href='#contact'
+          className='contact-cta'
           ref={ctaRef}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
         >
-          {homeData[lang]["btn"]}
+          {homeData[lang]['btn']}
         </motion.a>
-        <div className="link-social-media" ref={addToRef}>
+        <div className='link-social-media' ref={addToRef}>
           <span>
             <a
-              target="_blank"
-              rel="noreferrer"
-              href="https://linkedin.com/in/rabie-menad"
-              aria-label="Linkedin account"
+              target='_blank'
+              rel='noreferrer'
+              href='https://linkedin.com/in/rabie-menad'
+              aria-label='Linkedin account'
             >
               <FiLinkedin />
             </a>
           </span>
           <span>
             <a
-              target="_blank"
-              rel="noreferrer"
-              href="https://github.com/mena0018"
-              aria-label="GitHub account"
+              target='_blank'
+              rel='noreferrer'
+              href='https://github.com/mena0018'
+              aria-label='GitHub account'
             >
               <FiGithub />
             </a>
@@ -68,8 +69,8 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="svg-form" ref={addToRef}>
-        <img src={formSVG} alt="animated blob " />
+      <div className='svg-form' ref={addToRef}>
+        <Image src={formSVG} alt='animated blob' width={530} height={530} />
       </div>
     </div>
   );

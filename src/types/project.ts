@@ -1,5 +1,7 @@
+import { StaticImageData } from 'next/image';
+
 export type ProjectType = {
-  img: string;
+  img: StaticImageData;
   title: string;
   description: string;
   url: string[];

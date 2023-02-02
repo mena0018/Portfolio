@@ -1,6 +1,6 @@
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
 
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
@@ -10,7 +10,7 @@ export default function useSlideY() {
     valeurDepart?: number,
     delay?: number,
     duration?: number,
-    rotation?: number
+    rotation?: number,
   ) => {
     gsap.fromTo(
       element,
@@ -28,9 +28,9 @@ export default function useSlideY() {
         stagger: 0.2,
         scrollTrigger: {
           trigger: element,
-          start: "top center",
+          start: 'top center',
         },
-      }
+      },
     );
   };
   return slideY;

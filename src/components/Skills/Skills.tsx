@@ -1,12 +1,12 @@
-import { useEffect, useContext, useRef } from "react";
-import { Context } from "../../context/langContext";
-import "./Skills.css";
-import Skill from "./Skill";
-import useSlideY from "../../hook/useSlideY";
-import useAddRef from "../../hook/useAddRef";
-import { dataSkills } from "../../constants/skills";
-import { dataTitle } from "../../constants/title";
-import { SkillType } from "../../types/skill";
+import { useEffect, useContext, useRef } from 'react';
+import { Context } from '../../context/langContext';
+import './Skills.css';
+import Skill from './Skill';
+import useSlideY from '../../hook/useSlideY';
+import useAddRef from '../../hook/useAddRef';
+import { dataSkills } from '../../constants/skills';
+import { dataTitle } from '../../constants/title';
+import { SkillType } from '../../types/skill';
 
 export default function Skills() {
   const slideY = useSlideY();
@@ -22,12 +22,12 @@ export default function Skills() {
   }, [slideY, ref]);
 
   return (
-    <div className="container" id="skills">
-      <h1 className="title" ref={h1Ref}>
-        {dataTitle[lang]["skills"]}
+    <div className='container' id='skills'>
+      <h1 className='title' ref={h1Ref}>
+        {dataTitle[lang]['skills']}
       </h1>
 
-      <div className="container-skills">
+      <div className='container-skills'>
         {dataSkills[lang].map((item: SkillType, index: number) => (
           <div ref={addToRef} key={index}>
             <Skill name={item.name} stacks={item.stacks} />

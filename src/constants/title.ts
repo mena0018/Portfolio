@@ -1,14 +1,14 @@
-import { TitleType } from "../types/title";
+import { TitleType } from '../types/title';
 
 export const dataTitle: Record<string, TitleType> = {
   FR: {
-    about: "À propos",
-    skills: "Compétences",
-    realizations: "Réalisations",
+    about: 'À propos',
+    skills: 'Compétences',
+    realizations: 'Réalisations',
   },
   EN: {
-    about: "About",
-    skills: "Skills",
-    realizations: "Achievements",
+    about: 'About',
+    skills: 'Skills',
+    realizations: 'Achievements',
   },
 };
