@@ -1,6 +1,6 @@
 import './Skills.css';
 import { BsFillPatchCheckFill } from 'react-icons/bs';
-import { SkillType } from '../../types/skill';
+import { SkillType } from '@/types/skill';
 
 export default function Skill({ name, stacks }: SkillType) {
   return (

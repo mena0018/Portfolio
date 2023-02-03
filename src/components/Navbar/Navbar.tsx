@@ -1,8 +1,10 @@
-import { useState, useContext } from 'react';
-import { Context } from '../../context/langContext';
+'use client';
+
 import './Navbar.css';
-import { navbarData } from '../../constants/navbar';
-import ProgressBar from '../ProgressBar/ProgressBar';
+import { useState, useContext } from 'react';
+import { Context } from '@/context/langContext';
+import { navbarData } from '@/constants/navbar';
+import ProgressBar from '@/components/ProgressBar/ProgressBar';
 import logo from 'public/img/icones/logo/logoR.webp';
 import Image from 'next/image';
 

@@ -1,12 +1,14 @@
-import { useEffect, useContext, useRef } from 'react';
-import { Context } from '../../context/langContext';
+'use client';
+
 import './Skills.css';
+import { useEffect, useContext, useRef } from 'react';
+import { Context } from '@/context/langContext';
+import { dataSkills } from '@/constants/skills';
+import { SkillType } from '@/types/skill';
+import { dataTitle } from '@/constants/title';
+import useSlideY from '@/hooks/useSlideY';
+import useAddRef from '@/hooks/useAddRef';
 import Skill from './Skill';
-import useSlideY from '../../hook/useSlideY';
-import useAddRef from '../../hook/useAddRef';
-import { dataSkills } from '../../constants/skills';
-import { dataTitle } from '../../constants/title';
-import { SkillType } from '../../types/skill';
 
 export default function Skills() {
   const slideY = useSlideY();

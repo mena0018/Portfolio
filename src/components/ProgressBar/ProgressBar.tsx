@@ -1,6 +1,8 @@
+'use client';
+
 import './ProgressBar.css';
 import { useEffect } from 'react';
-import useProgressBar from '../../hook/useProgressBar';
+import useProgressBar from '@/hooks/useProgressBar';
 
 export default function ProgressBar() {
   const { scroll, progressBar } = useProgressBar();

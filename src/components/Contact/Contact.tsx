@@ -1,10 +1,12 @@
+'use client';
+
 import './Contact.css';
 import { useContext, useEffect, useRef } from 'react';
-import { Context } from '../../context/langContext';
-import { dataContact } from '../../constants/contact';
+import { Context } from '@/context/langContext';
+import { dataContact } from '@/constants/contact';
 import { motion } from 'framer-motion';
-import useSlideX from '../../hook/useSlideX';
-import useAddRef from '../../hook/useAddRef';
+import useSlideX from '@/hooks/useSlideX';
+import useAddRef from '@/hooks/useAddRef';
 import ContactItem from './ContactItem';
 
 export default function Contact() {

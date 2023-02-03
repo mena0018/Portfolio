@@ -1,13 +1,15 @@
+'use client';
+
 import './Home.css';
 import { useEffect, useContext, useRef } from 'react';
-import { Context } from '../../context/langContext';
 import { FiGithub, FiLinkedin } from 'react-icons/fi';
-import { homeData } from '../../constants/home';
 import { motion } from 'framer-motion';
-import useAddRef from '../../hook/useAddRef';
+import { Context } from '@/context/langContext';
+import { homeData } from '@/constants/home';
+import useAddRef from '@/hooks/useAddRef';
+import useSlideX from '@/hooks/useSlideX';
+import useSlideY from '@/hooks/useSlideY';
 import formSVG from 'public/img/blob.svg';
-import useSlideX from '../../hook/useSlideX';
-import useSlideY from '../../hook/useSlideY';
 import Image from 'next/image';
 
 export default function Home() {

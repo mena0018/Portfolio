@@ -1,13 +1,15 @@
-import { useEffect, useContext, useRef } from 'react';
-import { Context } from '../../context/langContext';
+'use client';
+
 import './Project.css';
+import { useEffect, useContext, useRef } from 'react';
+import { Context } from '@/context/langContext';
+import { dataProjects } from '@/constants/project';
+import { dataTitle } from '@/constants/title';
+import { ProjectType } from '@/types/project';
 import ProjectItem from './ProjectItem';
-import useSlideX from '../../hook/useSlideX';
-import useSlideY from '../../hook/useSlideY';
-import useAddRef from '../../hook/useAddRef';
-import { dataProjects } from '../../constants/project';
-import { dataTitle } from '../../constants/title';
-import { ProjectType } from '../../types/project';
+import useSlideX from '@/hooks/useSlideX';
+import useSlideY from '@/hooks/useSlideY';
+import useAddRef from '@/hooks/useAddRef';
 
 export default function ProjectList() {
   const { lang } = useContext(Context);

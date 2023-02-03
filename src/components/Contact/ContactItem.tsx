@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { BsFillArrowRightCircleFill } from 'react-icons/bs';
-import { ContactType } from '../../types/contact';
+import { ContactType } from '@/types/contact';
 
 export default function ContactItem({ icon, name, info, link, contact }: ContactType) {
   return (

@@ -1,6 +1,8 @@
+'use client';
+
 import './ToggleLang.css';
 import { useContext, useState } from 'react';
-import { Context } from '../../context/langContext';
+import { Context } from '@/context/langContext';
 import FrenchFlag from 'public/img/icones/toggle-switch/france.webp';
 import EnglishFlag from 'public/img/icones/toggle-switch/royaume-uni.webp';
 import Settings from 'public/img/icones/toggle-switch/settings.svg';

@@ -1,5 +1,5 @@
 import './Project.css';
-import { ProjectType } from '../../types/project';
+import { ProjectType } from '@/types/project';
 import { FiGithub } from 'react-icons/fi';
 import Image from 'next/image';
 

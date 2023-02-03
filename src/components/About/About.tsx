@@ -1,13 +1,15 @@
+'use client';
+
 import './About.css';
-import { useEffect, useContext, useRef } from 'react';
-import { Context } from '../../context/langContext';
-import { dataTitle } from '../../constants/title';
-import profilImg from 'public/img//about_me/profil.webp';
-import useSlideX from '../../hook/useSlideX';
-import useSlideY from '../../hook/useSlideY';
-import biographieEn from 'public/img//about_me/about_me_en.webp';
-import biographieFr from 'public/img//about_me/about_me_fr.webp';
 import Image from 'next/image';
+import { Context } from '@/context/langContext';
+import { dataTitle } from '@/constants/title';
+import { useEffect, useContext, useRef } from 'react';
+import useSlideX from '@/hooks/useSlideX';
+import useSlideY from '@/hooks/useSlideY';
+import profilImg from 'public/img//about_me/profil.webp';
+import biographieEn from 'public/img/about_me/about_me_en.webp';
+import biographieFr from 'public/img/about_me/about_me_fr.webp';
 
 export default function About() {
   const slideX = useSlideX();
