@@ -3,17 +3,18 @@ import Script from 'next/script';
 export default function Head() {
   return (
     <>
-      <link rel='icon' href='public/favicon.png' />
+      <link rel='icon' href='/favicon.png' />
       <link rel='preconnect' href='https://github.com/mena0018' />
       <link rel='preconnect' href='https://www.linkedin.com/in/rabie-menad/' />
       <meta name='viewport' content='width=device-width, initial-scale=1' />
+      <meta name='google-site-verification' content='YIuXWESaiIxevrq2WDlHlq6m3uKOzsfMS-Nn_sq_YJA' />
       <meta name='theme-color' content='#000000' />
       <title>Rabie Menad • Développeur</title>
       <meta
         name='description'
         content='Salut, je suis Rabie Menad, développeur web full stack en alternance travaillant essentiellement avec React.js / TypeScript pour le côté front-end et Symfony / API Platform pour le côté back-end.'
       />
-      <link rel='apple-touch-icon' href='public/favicon.png' />
+      <link rel='apple-touch-icon' href='/favicon.png' />
       <meta property='og:type' content='website' />
       <meta property='og:url' content='https://portfolio-rabie.web.app/' />
       <meta property='og:title' content='Rabie Menad • Développeur' />
@@ -34,7 +35,7 @@ export default function Head() {
       {/* Global site tag (gtag.js) - Google Analytics  */}
       <Script
         strategy='afterInteractive'
-        src='https://www.googletagmanager.com/gtag/js?id=G-WXQC4P95ME'
+        src='https://www.googletagmanager.com/gtag/js?id=G-9N6H1C7S06'
       />
       <Script
         id='google-analytics'
@@ -44,9 +45,7 @@ export default function Head() {
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments); }
             gtag('js', new Date());
-            gtag('config', 'G-WXQC4P95ME', {
-              page_path: window.location.pathname,
-              });
+            gtag('config', 'G-9N6H1C7S06');
           `,
         }}
       />
