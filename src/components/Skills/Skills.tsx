@@ -4,7 +4,7 @@ import './Skills.css';
 import { useContext } from 'react';
 import { Context } from '@/context/langContext';
 import { dataSkills } from '@/constants/skills';
-import { SkillType } from '@/types/skill';
+import { SkillType } from '@/types/index';
 import { dataTitle } from '@/constants/title';
 import { TypingText } from '../TypingText/TypingText';
 import Skill from './Skill';

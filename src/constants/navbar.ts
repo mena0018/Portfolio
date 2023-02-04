@@ -1,4 +1,4 @@
-import { NavbarType } from '../types/navbar';
+import { NavbarType } from '@/types/index';
 
 export const navbarData: Record<string, NavbarType[]> = {
   FR: [

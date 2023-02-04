@@ -5,7 +5,7 @@ import { useContext } from 'react';
 import { Context } from '@/context/langContext';
 import { dataProjects } from '@/constants/project';
 import { dataTitle } from '@/constants/title';
-import { ProjectType } from '@/types/project';
+import { ProjectTypes } from '@/types/index';
 import ProjectItem from './ProjectItem';
 
 import { TypingText } from '../TypingText/TypingText';
@@ -20,7 +20,7 @@ export default function ProjectList() {
         <TypingText title={dataTitle[lang]['realizations']} />
 
         <div className='container-realizations'>
-          {dataProjects[lang].map((item: ProjectType, index: number) => (
+          {dataProjects[lang].map((item: ProjectTypes, index: number) => (
             <ProjectItem
               key={index}
               title={item.title}

@@ -1,11 +1,18 @@
 import './Project.css';
-import { ProjectType } from '@/types/project';
+import { ProjectWithIndex } from '@/types/index';
 import { FiGithub } from 'react-icons/fi';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { slideIn } from 'src/utils/motion';
 
-export default function ProjectItem({ img, title, description, url, icons, index }: ProjectType) {
+export default function ProjectItem({
+  img,
+  title,
+  description,
+  url,
+  icons,
+  index,
+}: ProjectWithIndex) {
   const isEven = index % 2 === 0;
 
   return (

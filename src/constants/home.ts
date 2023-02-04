@@ -1,4 +1,4 @@
-import { HomeType } from '../types/home';
+import { HomeType } from '@/types/index';
 
 export const homeData: Record<string, HomeType> = {
   FR: {

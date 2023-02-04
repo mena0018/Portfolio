@@ -1,6 +1,6 @@
 import './Skills.css';
 import { BsFillPatchCheckFill } from 'react-icons/bs';
-import { SkillType } from '@/types/skill';
+import { SkillType } from '@/types/index';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../../utils/motion';
 

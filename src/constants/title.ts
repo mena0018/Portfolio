@@ -1,4 +1,4 @@
-import { TitleType } from '../types/title';
+import { TitleType } from '@/types/index';
 
 export const dataTitle: Record<string, TitleType> = {
   FR: {

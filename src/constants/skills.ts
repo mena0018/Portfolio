@@ -1,4 +1,4 @@
-import { SkillType } from '../types/skill';
+import { SkillType } from '@/types/index';
 
 export const dataSkills: Record<string, SkillType[]> = {
   FR: [

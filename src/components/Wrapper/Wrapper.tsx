@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { WrapperProps } from '@/types/props';
+import { WrapperProps } from '@/types/index';
 
 export default function Wrapper({ children, styles }: WrapperProps) {
   return (

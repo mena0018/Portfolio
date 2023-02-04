@@ -1,4 +1,4 @@
-import { AboutType } from '../types/about';
+import { AboutType } from '@/types/index';
 
 export const aboutData: Record<string, AboutType> = {
   FR: {
