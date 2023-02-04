@@ -1,53 +1,47 @@
 'use client';
 
 import './Home.css';
-import { useEffect, useContext, useRef } from 'react';
+import { useContext } from 'react';
 import { FiGithub, FiLinkedin } from 'react-icons/fi';
 import { motion } from 'framer-motion';
+import { fadeIn } from 'src/utils/motion';
 import { Context } from '@/context/langContext';
 import { homeData } from '@/constants/home';
-import useAddRef from '@/hooks/useAddRef';
-import useSlideX from '@/hooks/useSlideX';
-import useSlideY from '@/hooks/useSlideY';
+
 import formSVG from 'public/img/blob.svg';
 import Image from 'next/image';
 
 export default function Home() {
-  const slideX = useSlideX();
-  const slideY = useSlideY();
   const { lang } = useContext(Context);
 
-  const { ref, addToRef } = useAddRef<HTMLDivElement>();
-  const ctaRef = useRef<HTMLAnchorElement>(null);
-
-  useEffect(() => {
-    slideY(ref.current[2]); // #home
-    slideX(ctaRef.current, -1000, 0.1, 0.6); // btn-home
-    slideX(ref.current[0], -1000, 0.4, 0.6); // link-social-media
-    slideX(ref.current[1], -1000, 1, 0.6); // SVG FORM
-  }, [slideX, ref, slideY]);
-
   return (
-    <div className='Home' id='home' ref={addToRef}>
-      <div className='container-presentation'>
+    <section className='Home' id='home'>
+      <motion.div
+        className='container-presentation'
+        viewport={{ once: false, amount: 0.25 }}
+        initial='hidden'
+        whileInView='show'
+      >
         <div className='text-presentation'>
-          <p> {homeData[lang]['first']}</p>
-          <p>
+          <motion.p variants={fadeIn('right', 'tween', 0, 1)}> {homeData[lang]['first']}</motion.p>
+          <motion.p variants={fadeIn('right', 'tween', 0.2, 1)}>
             {homeData[lang]['second']}
             <span> Rabie,</span>
-          </p>
-          <p>{homeData[lang]['third']}</p>
+          </motion.p>
+          <motion.p variants={fadeIn('right', 'tween', 0.3, 1)}>{homeData[lang]['third']}</motion.p>
         </div>
+
         <motion.a
           href='#contact'
           className='contact-cta'
-          ref={ctaRef}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
+          variants={fadeIn('right', 'tween', 0.4, 1)}
         >
           {homeData[lang]['btn']}
         </motion.a>
-        <div className='link-social-media' ref={addToRef}>
+
+        <motion.div className='link-social-media' variants={fadeIn('right', 'tween', 0.6, 1)}>
           <span>
             <a
               target='_blank'
@@ -68,12 +62,12 @@ export default function Home() {
               <FiGithub />
             </a>
           </span>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
 
-      <div className='svg-form' ref={addToRef}>
+      <div className='svg-form'>
         <Image src={formSVG} alt='animated blob' width={530} height={530} />
       </div>
-    </div>
+    </section>
   );
 }

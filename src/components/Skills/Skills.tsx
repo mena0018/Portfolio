@@ -1,41 +1,29 @@
 'use client';
 
 import './Skills.css';
-import { useEffect, useContext, useRef } from 'react';
+import { useContext } from 'react';
 import { Context } from '@/context/langContext';
 import { dataSkills } from '@/constants/skills';
 import { SkillType } from '@/types/skill';
 import { dataTitle } from '@/constants/title';
-import useSlideY from '@/hooks/useSlideY';
-import useAddRef from '@/hooks/useAddRef';
+import { TypingText } from '../TypingText/TypingText';
 import Skill from './Skill';
+import Wrapper from '../Wrapper/Wrapper';
 
 export default function Skills() {
-  const slideY = useSlideY();
   const { lang } = useContext(Context);
 
-  const { ref, addToRef } = useAddRef<HTMLDivElement>();
-  const h1Ref = useRef<HTMLHeadingElement>(null);
-
-  useEffect(() => {
-    slideY(h1Ref.current, -200);
-    slideY(ref.current[0], -200, 0.2, 0.5, -180);
-    slideY(ref.current[1], -200, 0.2, 0.5, 180);
-  }, [slideY, ref]);
-
   return (
-    <div className='container' id='skills'>
-      <h1 className='title' ref={h1Ref}>
-        {dataTitle[lang]['skills']}
-      </h1>
+    <section className='container' id='skills'>
+      <Wrapper>
+        <TypingText title={dataTitle[lang]['skills']} />
 
-      <div className='container-skills'>
-        {dataSkills[lang].map((item: SkillType, index: number) => (
-          <div ref={addToRef} key={index}>
-            <Skill name={item.name} stacks={item.stacks} />
-          </div>
-        ))}
-      </div>
-    </div>
+        <div className='container-skills'>
+          {dataSkills[lang].map((item: SkillType, index: number) => (
+            <Skill name={item.name} stacks={item.stacks} key={index} />
+          ))}
+        </div>
+      </Wrapper>
+    </section>
   );
 }

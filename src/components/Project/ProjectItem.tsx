@@ -2,10 +2,17 @@ import './Project.css';
 import { ProjectType } from '@/types/project';
 import { FiGithub } from 'react-icons/fi';
 import Image from 'next/image';
+import { motion } from 'framer-motion';
+import { slideIn } from 'src/utils/motion';
 
-export default function ProjectItem({ img, title, description, url, icons }: ProjectType) {
+export default function ProjectItem({ img, title, description, url, icons, index }: ProjectType) {
+  const isEven = index % 2 === 0;
+
   return (
-    <div className='project-item'>
+    <motion.div
+      className='project-item'
+      variants={slideIn(isEven ? 'left' : 'right', 'tween', 0.1 * index, 1)}
+    >
       <div className='bloc-img'>
         <a target='_blank' rel='noreferrer' href={url[1]} aria-label='project url link'>
           <Image src={img} alt="Miniature de projet que j'ai pu réaliser" />
@@ -26,6 +33,6 @@ export default function ProjectItem({ img, title, description, url, icons }: Pro
         </h2>
         <p className='project-description'>{description}</p>
       </div>
-    </div>
+    </motion.div>
   );
 }

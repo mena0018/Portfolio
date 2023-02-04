@@ -22,7 +22,7 @@ export default function Navbar() {
           <ul onClick={btnClick} className={`liste-nav ${isActive && 'active'}`}>
             <li className='item-nav'>
               <a href='#home' className='nav-link'>
-                <Image src={logo} alt='Logo' width={45} height={45} />
+                <Image src={logo} alt='Logo' width={45} height={45} priority />
               </a>
             </li>
 

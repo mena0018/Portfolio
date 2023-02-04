@@ -11,7 +11,7 @@ import next from '/public/img/icones/langages/next-js.svg';
 import sass from '/public/img/icones/langages/sass.svg';
 import tailwind from '/public/img/icones/langages/tailwindcss.svg';
 
-export const dataProjects: Record<string, ProjectType[]> = {
+export const dataProjects: Record<string, Omit<ProjectType, 'id'>[]> = {
   FR: [
     {
       title: 'Metaversus',

@@ -14,7 +14,6 @@
     "@types/react-dom": "latest",
     "classnames": "latest",
     "framer-motion": "^8.0.2",
-    "gsap": "latest",
     "next": "latest",
     "react": "latest",
     "react-dom": "latest",

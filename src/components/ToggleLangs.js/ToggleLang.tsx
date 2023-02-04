@@ -23,6 +23,7 @@ export default function ToggleLang() {
         onClick={handleClick}
         alt='icône de paramètres'
         className={`logo-settings ${isActive && 'active'}`}
+        priority
       />
 
       <div onClick={handleClick} className={`items ${isActive && 'active'}`}>

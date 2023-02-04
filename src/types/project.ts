@@ -6,4 +6,5 @@ export type ProjectType = {
   description: string;
   url: string[];
   icons: string[];
+  index: number;
 };
