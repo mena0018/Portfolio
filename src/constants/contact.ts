@@ -1,4 +1,4 @@
-import WhatsApp from 'public/img/icones/contact/whatsapp.svg';
+import Malt from 'public/img/icones/contact/malt.svg';
 import Gmail from 'public/img/icones/contact/google-gmail.svg';
 import Linkedin from 'public/img/icones/contact/linkedin.svg';
 
@@ -20,10 +20,10 @@ export const dataContact: Record<string, unknown> = {
       contact: 'Écris moi',
     },
     {
-      icon: WhatsApp,
-      name: 'WhatsApp',
-      info: '06-67-86-96-37',
-      link: 'https://wa.me/+33667869637',
+      icon: Malt,
+      name: 'Malt',
+      info: 'Freelance',
+      link: 'https://www.malt.fr/profile/rabiemenad',
       contact: 'Écris moi',
     },
   ],
@@ -45,10 +45,10 @@ export const dataContact: Record<string, unknown> = {
       contact: 'Write me',
     },
     {
-      icon: WhatsApp,
-      name: 'WhatsApp',
-      info: '06-67-86-96-37',
-      link: 'https://wa.me/+33667869637',
+      icon: Malt,
+      name: 'Malt',
+      info: 'Freelance',
+      link: 'https://www.malt.fr/profile/rabiemenad',
       contact: 'Write me',
     },
   ],
