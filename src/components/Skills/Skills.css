@@ -12,7 +12,7 @@
   padding: 40px 20px;
   border-radius: 30px;
   font-size: 1.4rem;
-  margin: 30px auto;
+  margin: 0 auto;
 }
 
 .subtitle {
@@ -85,5 +85,48 @@
 
   .list-skills .item-skill {
     width: 40%;
+  }
+}
+
+/* Animation on border */
+.container-skill {
+  position: relative;
+}
+
+.border-gradient {
+  background-image: conic-gradient(#333, #a100ffff, #119cfdff);
+  position: absolute;
+  left: -50%;
+  right: -50%;
+  top: -50%;
+  height: 250%;
+  animation: rotate 15s linear infinite;
+  opacity: 0;
+  transition: opacity 0.1s;
+}
+
+.wrapper {
+  padding: 2px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 30px;
+}
+
+.wrapper:hover > .border-gradient {
+  opacity: 1;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0);
+  }
+}
+
+@media (pointer: coarse) {
+  .wrapper:hover > .border-gradient {
+    opacity: 0;
   }
 }
