@@ -6,30 +6,39 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "vitest"
   },
   "dependencies": {
-    "@types/node": "latest",
-    "@types/react": "latest",
-    "@types/react-dom": "latest",
     "classnames": "latest",
     "framer-motion": "^8.0.2",
     "next": "latest",
     "react": "latest",
-    "react-dom": "latest",
-    "react-icons": "latest",
-    "typescript": "latest"
+    "react-dom": "latest"
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "^13.0.5",
+    "@testing-library/dom": "^9.0.1",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/user-event": "^14.4.3",
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "@types/testing-library__jest-dom": "^5.14.5",
     "@typescript-eslint/eslint-plugin": "^5.47.0",
     "@typescript-eslint/parser": "^5.47.0",
+    "@vitejs/plugin-react": "^3.1.0",
     "eslint": "^8.30.0",
-    "eslint-plugin-react": "^7.31.11",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "prettier": "^2.8.1",
     "eslint-config-next": "^13.1.2",
     "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-prettier": "^4.2.1"
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.31.11",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "jsdom": "^21.1.1",
+    "prettier": "^2.8.1",
+    "react-icons": "latest",
+    "typescript": "latest",
+    "vitest": "^0.29.3"
   }
 }
