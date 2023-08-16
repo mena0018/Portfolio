@@ -66,7 +66,7 @@ export default function Home() {
       </motion.div>
 
       <div className='svg-form'>
-        <Image src={formSVG} alt='animated blob' width={530} height={530} />
+        <Image priority src={formSVG} alt='animated blob' width={530} height={530} />
       </div>
     </section>
   );

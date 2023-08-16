@@ -22,7 +22,7 @@ export default function ProjectItem({
     >
       <div className='bloc-img'>
         <a target='_blank' rel='noreferrer' href={url[1]} aria-label='project url link'>
-          <Image src={img} alt="Miniature de projet que j'ai pu réaliser" />
+          <Image priority src={img} alt="Miniature de projet que j'ai pu réaliser" />
         </a>
       </div>
 
@@ -34,7 +34,7 @@ export default function ProjectItem({
           </a>
           <p>
             {icons.map((item: string, index: number) => (
-              <Image src={item} key={index} alt='Icônes des langages utilisés' />
+              <Image priority src={item} key={index} alt='Icônes des langages utilisés' />
             ))}
           </p>
         </h2>

@@ -27,11 +27,11 @@ export default function ToggleLang() {
       />
 
       <div onClick={handleClick} className={`items ${isActive && 'active'}`}>
-        <Image src={EnglishFlag} alt='Drapeau Anglais' onClick={() => toggleLang('EN')} />
+        <Image priority src={EnglishFlag} alt='Drapeau Anglais' onClick={() => toggleLang('EN')} />
       </div>
 
       <div onClick={handleClick} className={`items ${isActive && 'active'}`}>
-        <Image src={FrenchFlag} alt='Drapeau Français' onClick={() => toggleLang('FR')} />
+        <Image priority src={FrenchFlag} alt='Drapeau Français' onClick={() => toggleLang('FR')} />
       </div>
     </>
   );

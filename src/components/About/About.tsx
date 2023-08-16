@@ -23,11 +23,12 @@ export default function About() {
 
         <div className='container-about'>
           <motion.div className='profil-img' variants={fadeIn('right', 'tween', 0.2, 1)}>
-            <Image src={profilImg} alt='Bitmoji Snapchat' priority />
+            <Image priority src={profilImg} alt='Bitmoji Snapchat' />
           </motion.div>
 
           <motion.div className='biographie' variants={fadeIn('left', 'tween', 0.2, 1)}>
             <Image
+              priority
               src={lang === 'FR' ? biographieFr : biographieEn}
               alt="Capture d'écran me décrivant"
             />
