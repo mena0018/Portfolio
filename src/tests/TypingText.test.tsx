@@ -1,6 +1,6 @@
-import { TypingText } from '@/components/TypingText/TypingText';
-import { render, screen } from '@testing-library/react';
 import { describe, expect, test } from 'vitest';
+import { render, screen } from '@testing-library/react';
+import { TypingText } from '@/components/index';
 
 describe('TypingText', () => {
   test("Should show as much span as props's length", () => {
