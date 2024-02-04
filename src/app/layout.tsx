@@ -4,7 +4,6 @@ import { PropsWithChildren } from 'react';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://rabiemenad.fr'),
-  themeColor: '#000000',
   robots: { index: true, follow: true },
   manifest: '/site.webmanifest',
   applicationName: 'Rabie Menad',
