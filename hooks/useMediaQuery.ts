@@ -2,7 +2,9 @@
 
 import { useEffect, useState } from 'react';
 
-export function useMediaQuery(query: string) {
+const MIN_WIDTH = '(min-width: 768px)';
+
+export function useMediaQuery(query = MIN_WIDTH) {
   const [value, setValue] = useState(false);
 
   useEffect(() => {

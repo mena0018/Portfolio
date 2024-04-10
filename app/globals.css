@@ -38,8 +38,8 @@
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
     --primary: 206 69% 90%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-    --secondary: 217.2 32.6% 17.5%;
+    --primary-foreground: 233 70% 9%;
+    --secondary: 0 0 75%;
     --secondary-foreground: 206 69% 90%;
     --accent: 217.2 32.6% 17.5%;
     --accent-foreground: 210 40% 98%;
@@ -55,6 +55,9 @@
   * {
     @apply border-border;
   }
+  html {
+    scroll-behavior: smooth;
+  }
   body {
     @apply bg-background text-foreground;
   }
@@ -62,6 +65,22 @@
 
 @layer components {
   .nav-item {
-    @apply block rounded-lg px-4 py-2 uppercase text-lg hover:bg-primary-foreground;
+    @apply transition-all block rounded-lg px-4 py-2 text-[1rem];
   }
+  .shimmer-btn {
+    @apply animate-shimmer font-medium bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] border-2 border-accent;
+  }
+  .blue-gradient-cta {
+    @apply font-medium bg-gradient-to-r from-blue-700 via-blue-800 to-blue-900 hover:bg-gradient-to-br;
+  }
+}
+
+.gradient {
+  position: absolute;
+  width: 250px;
+  height: 50px;
+  left: 37%;
+  bottom: 0;
+  background: #44a2d8;
+  filter: blur(150px);
 }

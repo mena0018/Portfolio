@@ -2,14 +2,18 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
-import { MenuIcon } from 'lucide-react';
-import { navItems } from '@/data/navbar';
-import { Hash, useStore } from '@/data/store';
-import { LinkItem } from '@/components/features/header/LinkItem';
+import { BurgerIcon } from '@/icons/BurgerIcon';
+import { NavItem } from '@/app/(navbar)/nav-item';
+import { navItems } from '@/app/(navbar)/navbar.data';
+import { Hash, useNavbarStore } from '@/app/(navbar)/navbar.store';
 import { Drawer, DrawerContent, DrawerTrigger } from '@/components/ui/drawer';
 
-export const DrawerMenu = () => {
-  const { hash, updateHash } = useStore();
+export const BurgerMenu = () => {
+  const { hash, updateHash } = useNavbarStore((state) => ({
+    hash: state.hash,
+    updateHash: state.updateHash,
+  }));
+
   const [open, setOpen] = useState(false);
   const activeItem = navItems.find((item) => item.href === hash) || navItems[0];
 
@@ -31,16 +35,17 @@ export const DrawerMenu = () => {
           >
             {activeItem.label}
           </Link>
-          <MenuIcon />
+          <BurgerIcon />
         </li>
       </DrawerTrigger>
 
       <DrawerContent>
         <ul className='p-2'>
           {navItems.map((item) => (
-            <LinkItem
+            <NavItem
               {...item}
               key={item.id}
+              className='hover:bg-accent'
               onClick={() => handleClick(item.href)}
             />
           ))}

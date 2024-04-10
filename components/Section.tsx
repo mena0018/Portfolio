@@ -1,11 +1,17 @@
 import { cn } from '@/lib/utils';
 import { PropsWithChildren } from 'react';
 
-type SectionProps = PropsWithChildren<{ className: string }>;
+type SectionProps = PropsWithChildren<{ className?: string; id: string }>;
 
-export const Section = ({ children, className }: SectionProps) => {
+export const Section = ({ children, id, className }: SectionProps) => {
   return (
-    <section className={cn('max-w-3xl px-4 m-auto', className)}>
+    <section
+      id={id}
+      className={cn(
+        'w-full max-w-container overflow-hidden m-auto px-4 md:px-8 py-5 md:py-10 bg-primary-foreground border border-accent rounded-lg',
+        className,
+      )}
+    >
       {children}
     </section>
   );
