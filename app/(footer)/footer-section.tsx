@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import avatar from '@/public/images/avatar.png';
+import avatar from '@/public/images/avatar.webp';
 import { Section } from '@/components/section';
 import { AvailableBadge } from '@/components/available-badge';
 import { HoverBorderGradient } from '@/components/ui/hover-border-gradient';
