@@ -17,7 +17,7 @@ export const BurgerMenu = () => {
   const [open, setOpen] = useState(false);
   const activeItem = navItems.find((item) => item.href === hash) || navItems[0];
 
-  const handleClick = (href: Hash) => {
+  const handleNavigate = (href: Hash) => {
     updateHash(href);
     setOpen(false);
   };
@@ -46,7 +46,7 @@ export const BurgerMenu = () => {
               {...item}
               key={item.id}
               className='hover:bg-accent'
-              onClick={() => handleClick(item.href)}
+              onClick={() => handleNavigate(item.href)}
             />
           ))}
         </ul>

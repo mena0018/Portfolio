@@ -7,7 +7,7 @@ export const AppIcon = ({ size, color, ...props }: IconProps) => {
       width={size || 48}
       height={size || 48}
       viewBox='0 0 64 64'
-      fill='none'
+      fill='#080A27'
       xmlns='http://www.w3.org/2000/svg'
     >
       <rect x='1' y='1' width='62' height='62' rx='31' fill='#1B1B1B' />
