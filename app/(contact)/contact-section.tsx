@@ -5,7 +5,7 @@ import { Section } from '@/components/section';
 import { AvailableBadge } from '@/components/available-badge';
 import { HoverBorderGradient } from '@/components/ui/hover-border-gradient';
 
-export const FooterSection = () => {
+export const ContactSection = () => {
   return (
     <Section id='contact' className='relative overflow-hidden mb-6'>
       <div className='gradient' />

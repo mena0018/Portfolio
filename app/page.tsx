@@ -1,6 +1,6 @@
 import { AboutSection } from '@/app/(about)/about-section';
 import { SkillsSection } from '@/app/(skills)/skills-section';
-import { FooterSection } from '@/app/(footer)/footer-section';
+import { ContactSection } from '@/app/(contact)/contact-section';
 import { ProjectSection } from '@/app/(projects)/projects-section';
 
 export default function Home() {
@@ -10,7 +10,7 @@ export default function Home() {
         <AboutSection />
         <SkillsSection />
         <ProjectSection />
-        <FooterSection />
+        <ContactSection />
       </div>
     </div>
   );

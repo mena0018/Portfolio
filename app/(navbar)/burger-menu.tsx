@@ -6,7 +6,7 @@ import { BurgerIcon } from '@/icons/BurgerIcon';
 import { NavItem } from '@/app/(navbar)/nav-item';
 import { navItems } from '@/app/(navbar)/navbar.data';
 import { Hash, useNavbarStore } from '@/app/(navbar)/navbar.store';
-import { Drawer, DrawerContent, DrawerTrigger } from '@/components/ui/drawer';
+import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 
 export const BurgerMenu = () => {
   const { hash, updateHash } = useNavbarStore((state) => ({
@@ -23,8 +23,8 @@ export const BurgerMenu = () => {
   };
 
   return (
-    <Drawer direction='left' open={open} onOpenChange={setOpen}>
-      <DrawerTrigger asChild>
+    <Sheet open={open} onOpenChange={setOpen}>
+      <SheetTrigger asChild>
         <li
           onClick={() => setOpen(!open)}
           className='cursor-pointer w-full flex items-center justify-between'
@@ -37,9 +37,9 @@ export const BurgerMenu = () => {
           </Link>
           <BurgerIcon />
         </li>
-      </DrawerTrigger>
+      </SheetTrigger>
 
-      <DrawerContent>
+      <SheetContent>
         <ul className='p-2'>
           {navItems.map((item) => (
             <NavItem
@@ -50,7 +50,7 @@ export const BurgerMenu = () => {
             />
           ))}
         </ul>
-      </DrawerContent>
-    </Drawer>
+      </SheetContent>
+    </Sheet>
   );
 };
