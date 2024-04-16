@@ -36,7 +36,7 @@ export const projects: Array<Project> = [
   {
     id: Date.now(),
     title: ProjectTitle.URLShortening,
-    link: 'https://github.com/mena0018/URL-Shortening',
+    link: 'https://url-shortening-virid.vercel.app',
     imgUrl: URLShortening.src,
     description:
       'Frontend Mentor challenge focus on the integration of a shortened URLs with the shrtcode API.',
@@ -44,7 +44,7 @@ export const projects: Array<Project> = [
   {
     id: Date.now(),
     title: ProjectTitle.CountDown,
-    link: 'https://github.com/mena0018/Launch-Countdown-timer',
+    link: 'https://launch-countdown-time.netlify.app',
     imgUrl: CountDown.src,
     description: 'Countdown challenge proposed by Frontend Mentor.',
   },

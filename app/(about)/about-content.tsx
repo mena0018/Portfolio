@@ -1,6 +1,6 @@
 'use client';
 
-import avatar from '@/public/images/avatar.webp';
+import avatar from '@/public/images/avatar-blue.webp';
 import { toast } from 'sonner';
 import { useState } from 'react';
 import { Code } from '@/components/code';
