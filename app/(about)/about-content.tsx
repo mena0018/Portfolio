@@ -60,12 +60,14 @@ export const AboutContent = () => {
           >
             <Button
               variant='none'
+              aria-label='cta-btn'
               className='animate-accordion-down rounded-none rounded-tl-sm rounded-bl-sm p-2 blue-gradient-cta'
             >
               Hire Me
             </Button>
             <Button
               variant='none'
+              aria-label='cta-btn'
               className='rounded-none rounded-tr-sm rounded-br-sm px-1 blue-gradient-cta'
             >
               <PlusIcon />
@@ -81,6 +83,7 @@ export const AboutContent = () => {
             </Button>
             <Button
               variant='none'
+              aria-label='cta-btn'
               className='rounded-none rounded-tr-sm rounded-br-sm px-1 shimmer-btn'
             >
               {isCopied ? <CheckIcon /> : <DuplicateIcon />}
