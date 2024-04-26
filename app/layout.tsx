@@ -8,6 +8,7 @@ import { GeistSans } from 'geist/font/sans';
 import { GeistMono } from 'geist/font/mono';
 import { baseMetadata } from '@/app/metadata';
 import { Header } from '@/app/(navbar)/header';
+import { GoogleAnalytics } from '@next/third-parties/google';
 import { ThemeProvider } from '@/app/(theme)/theme-provider';
 
 export const metadata: Metadata = baseMetadata;
@@ -16,6 +17,7 @@ const rubik = Rubik({ subsets: ['latin'], variable: '--font-caption' });
 export default function RootLayout({ children }: PropsWithChildren) {
   return (
     <html suppressHydrationWarning lang='en' className='h-full'>
+      <GoogleAnalytics gaId='G-9N6H1C7S06' />
       <body
         suppressHydrationWarning
         className={cn(
