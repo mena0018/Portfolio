@@ -16,17 +16,17 @@ export const NextHeader = () => {
       className='flex flex-1 gap-2 w-full h-full min-h-[6rem]'
     >
       <CustomBadge
+        variants={rotateRight}
+        title='PostgreSQL'
+        description='Database'
+        icon={<PostgresIcon className='rounded-full h-12 w-10' />}
+      />
+      <CustomBadge
         title='Next'
         description='Framework'
         icon={
           <NextIcon color='white' className='rounded-full h-10 w-10 ring' />
         }
-        variants={rotateRight}
-      />
-      <CustomBadge
-        title='PostgreSQL'
-        description='Database'
-        icon={<PostgresIcon className='rounded-full h-12 w-10' />}
       />
       <CustomBadge
         variants={rotateLeft}

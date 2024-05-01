@@ -1,8 +1,6 @@
 'use client';
 
 import avatar from '@/public/images/avatar-blue.webp';
-import { toast } from 'sonner';
-import { useState } from 'react';
 import { Code } from '@/components/code';
 import { PlusIcon } from '@/icons/PlusIcon';
 import { CheckIcon } from '@/icons/CheckIcon';
@@ -11,22 +9,11 @@ import { Button } from '@/components/ui/button';
 import { Skeleton } from '@/components/ui/skeleton';
 import { DuplicateIcon } from '@/icons/DuplicateIcon';
 import { ApplicationIcon } from '@/icons/ApplicationIcon';
+import { useCopyToClipboard } from '@/hooks/useCopyToClipboard';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 
 export const AboutContent = () => {
-  const [isCopied, setIsCopied] = useState(false);
-
-  const copyToClipboard = (text = 'rabie.menad07@gmail.com') => {
-    navigator.clipboard
-      .writeText(text)
-      .then(() => {
-        setIsCopied(true);
-        toast.success('Copied to clipboard');
-      })
-      .catch(() => {
-        toast.error('Error copying to clipboard');
-      });
-  };
+  const { isCopied, copyToClipboard } = useCopyToClipboard();
 
   return (
     <div className='flex gap-10 flex-col md:flex-row-reverse md:justify-between'>

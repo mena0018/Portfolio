@@ -17,7 +17,7 @@ export const ProjectItem = ({ link, title, description, imgUrl }: Project) => {
                 className='rounded-lg w-full h-full object-cover'
               />
             </div>
-            <div className='flex flex-col gap-1 p-6 h-full rounded-lg backdrop-blur-xl transition-opacity group-hover:opacity-0'>
+            <div className='flex flex-col gap-1 p-6 h-full rounded-lg backdrop-blur-xl transition-opacity group-hover:opacity-0 duration-500'>
               <span
                 className={cn('text-lg md:text-2xl font-semibold', {
                   'text-background': title === ProjectTitle.URLShortening,

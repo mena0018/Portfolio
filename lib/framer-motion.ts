@@ -21,3 +21,38 @@ export const rotateLeft: Variants = {
     rotate: 0,
   },
 };
+
+export const variants: Variants = {
+  initial: {
+    x: 0,
+  },
+  animate: {
+    x: 10,
+    rotate: 5,
+    transition: {
+      duration: 0.2,
+    },
+  },
+};
+
+export const variantsSecond: Variants = {
+  initial: {
+    x: 0,
+  },
+  animate: {
+    x: -10,
+    rotate: -5,
+    transition: {
+      duration: 0.2,
+    },
+  },
+};
+
+export const variantsBackground: Variants = {
+  initial: {
+    backgroundPosition: '0 50%',
+  },
+  animate: {
+    backgroundPosition: ['0, 50%', '100% 50%', '0 50%'],
+  },
+};

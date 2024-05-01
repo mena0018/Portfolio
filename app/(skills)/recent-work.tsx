@@ -29,6 +29,7 @@ export const RecentWork = () => {
           logo={ivsLogo.src}
         />
         <WorkItem
+          role='FullStack'
           date='March 2022 - June 2022'
           company='INRAE'
           logo={inraeLogo.src}

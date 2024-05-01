@@ -1,21 +1,15 @@
+'use client';
+
 import { motion } from 'framer-motion';
+import { variantsBackground } from '@/lib/framer-motion';
 
 export const TypescriptHeader = () => {
-  const variants = {
-    initial: {
-      backgroundPosition: '0 50%',
-    },
-    animate: {
-      backgroundPosition: ['0, 50%', '100% 50%', '0 50%'],
-    },
-  };
-
   return (
     <div className='w-full h-full flex items-center justify-center pb-5'>
       <motion.div
         initial='initial'
         animate='animate'
-        variants={variants}
+        variants={variantsBackground}
         transition={{
           duration: 5,
           repeat: Infinity,

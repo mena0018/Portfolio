@@ -73,14 +73,7 @@
   .blue-gradient-cta {
     @apply font-medium bg-gradient-to-r from-blue-700 via-blue-800 to-blue-900 hover:bg-gradient-to-br;
   }
-}
-
-.gradient {
-  position: absolute;
-  width: 250px;
-  height: 50px;
-  left: 37%;
-  bottom: 0;
-  background: #44a2d8;
-  filter: blur(150px);
+  .gradient {
+    @apply absolute w-64 h-12 left-[37%] bottom-0 blur-[150px] bg-[#44a2d8];
+  }
 }

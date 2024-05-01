@@ -1,6 +1,7 @@
 'use client';
 
 import * as React from 'react';
+import { toast } from 'sonner';
 import { useTheme } from 'next-themes';
 import { MoonIcon, SunIcon } from '@radix-ui/react-icons';
 
@@ -29,7 +30,15 @@ export function ModeToggle() {
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align='end'>
-        <DropdownMenuItem onClick={() => setTheme('light')}>
+        <DropdownMenuItem
+          onClick={() => {
+            setTheme('light');
+            toast.warning(
+              "I'm still working on it, my apologies for this disasters...",
+              { duration: 5000 },
+            );
+          }}
+        >
           Light
         </DropdownMenuItem>
         <DropdownMenuItem onClick={() => setTheme('dark')}>

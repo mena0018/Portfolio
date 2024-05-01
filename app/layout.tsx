@@ -1,6 +1,7 @@
 import './globals.css';
 import { Toaster } from 'sonner';
 import { cn } from '@/lib/utils';
+import { Config } from '@/config';
 import type { Metadata } from 'next';
 import { Rubik } from 'next/font/google';
 import { PropsWithChildren } from 'react';
@@ -17,7 +18,7 @@ const rubik = Rubik({ subsets: ['latin'], variable: '--font-caption' });
 export default function RootLayout({ children }: PropsWithChildren) {
   return (
     <html suppressHydrationWarning lang='en' className='h-full'>
-      <GoogleAnalytics gaId='G-9N6H1C7S06' />
+      <GoogleAnalytics gaId={Config.googleAnalytics} />
       <body
         suppressHydrationWarning
         className={cn(

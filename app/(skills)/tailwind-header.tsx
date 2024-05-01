@@ -1,34 +1,9 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { variants, variantsSecond } from '@/lib/framer-motion';
 
 export const TailwindHeader = () => {
-  const variants = {
-    initial: {
-      x: 0,
-    },
-    animate: {
-      x: 10,
-      rotate: 5,
-      transition: {
-        duration: 0.2,
-      },
-    },
-  };
-
-  const variantsSecond = {
-    initial: {
-      x: 0,
-    },
-    animate: {
-      x: -10,
-      rotate: -5,
-      transition: {
-        duration: 0.2,
-      },
-    },
-  };
-
   return (
     <motion.div
       initial='initial'

@@ -4,15 +4,19 @@ type WorkItemProps = ComponentPropsWithoutRef<'li'> & {
   date: string;
   logo: string;
   company: string;
+  role?: string;
 };
 
-export const WorkItem = ({ date, company, logo }: WorkItemProps) => {
+export const WorkItem = ({
+  role = 'FrontEnd',
+  date,
+  logo,
+  company,
+}: WorkItemProps) => {
   return (
     <li className='w-full flex justify-between items-center'>
       <div className='flex flex-col md:gap-2'>
-        <p className='text-primary font-medium md:text-lg'>
-          FrontEnd Developer
-        </p>
+        <p className='text-primary font-medium md:text-lg'>{`${role} Developer`}</p>
         <p className='text-secondary text-sm'>{date}</p>
       </div>
       <div className='flex justify-start gap-3 items-center min-w-28'>
