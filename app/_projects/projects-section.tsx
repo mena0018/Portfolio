@@ -1,6 +1,6 @@
 import { Section } from '@/components/section';
-import { projects } from '@/app/(projects)/projects.data';
-import { ProjectItem } from '@/app/(projects)/project-item';
+import { projects } from '@/app/_projects/projects.data';
+import { ProjectItem } from '@/app/_projects/project-item';
 import {
   Carousel,
   CarouselNext,

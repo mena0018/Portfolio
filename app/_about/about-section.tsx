@@ -1,6 +1,6 @@
 import { Section } from '@/components/section';
-import { AboutHeader } from '@/app/(about)/about-header';
-import { AboutContent } from '@/app/(about)/about-content';
+import { AboutHeader } from '@/app/_about/about-header';
+import { AboutContent } from '@/app/_about/about-content';
 
 export const AboutSection = () => {
   return (

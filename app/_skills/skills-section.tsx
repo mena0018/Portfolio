@@ -4,10 +4,10 @@ import { cn } from '@/lib/utils';
 import { NextIcon } from '@/icons/NextIcon';
 import { ReactIcon } from '@/icons/ReactIcon';
 import { TypescriptIcon } from '@/icons/TypescriptIcon';
-import { NextHeader } from '@/app/(skills)/next-header';
-import { RecentWork } from '@/app/(skills)/recent-work';
-import { ReactHeader } from '@/app/(skills)/react-header';
-import { TypescriptHeader } from '@/app/(skills)/typescript-header';
+import { NextHeader } from '@/app/_skills/next-header';
+import { RecentWork } from '@/app/_skills/recent-work';
+import { ReactHeader } from '@/app/_skills/react-header';
+import { TypescriptHeader } from '@/app/_skills/typescript-header';
 import {
   BentoGrid,
   BentoGridItem,

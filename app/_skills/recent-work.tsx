@@ -2,7 +2,7 @@ import ivsLogo from '@/public/images/company/ivs-company.jpeg';
 import erevoLogo from '@/public/images/company/erevo-logo.jpeg';
 import ideineLogo from '@/public/images/company/ideine-logo.jpeg';
 import inraeLogo from '@/public/images/company/inrae-logo.jpeg';
-import { WorkItem } from '@/app/(skills)/work-item';
+import { WorkItem } from '@/app/_skills/work-item';
 
 export const RecentWork = () => {
   return (

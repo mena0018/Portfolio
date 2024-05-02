@@ -1,7 +1,7 @@
-import { AboutSection } from '@/app/(about)/about-section';
-import { SkillsSection } from '@/app/(skills)/skills-section';
-import { ContactSection } from '@/app/(contact)/contact-section';
-import { ProjectSection } from '@/app/(projects)/projects-section';
+import { AboutSection } from '@/app/_about/about-section';
+import { SkillsSection } from '@/app/_skills/skills-section';
+import { ContactSection } from '@/app/_contact/contact-section';
+import { ProjectSection } from '@/app/_projects/projects-section';
 
 export default function Home() {
   return (

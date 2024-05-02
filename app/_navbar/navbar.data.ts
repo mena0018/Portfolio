@@ -1,5 +1,5 @@
 import { v4 as uuidv4 } from 'uuid';
-import { Hash, NavbarItem } from '@/app/(navbar)/navbar.store';
+import { Hash, NavbarItem } from '@/app/_navbar/navbar.store';
 
 export type NavItemType = {
   id: string;

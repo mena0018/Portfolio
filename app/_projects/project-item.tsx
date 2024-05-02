@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { cn } from '@/lib/utils';
 import { CarouselItem } from '@/components/ui/carousel';
 import { Card, CardContent } from '@/components/ui/card';
-import { Project, ProjectTitle } from '@/app/(projects)/projects.data';
+import { Project, ProjectTitle } from '@/app/_projects/projects.data';
 
 export const ProjectItem = ({ link, title, description, imgUrl }: Project) => {
   return (

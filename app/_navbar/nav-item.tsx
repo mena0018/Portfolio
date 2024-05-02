@@ -3,8 +3,8 @@
 import Link from 'next/link';
 import { cn } from '@/lib/utils';
 import { ComponentPropsWithRef } from 'react';
-import { NavItemType } from '@/app/(navbar)/navbar.data';
-import { useNavbarStore } from '@/app/(navbar)/navbar.store';
+import { NavItemType } from '@/app/_navbar/navbar.data';
+import { useNavbarStore } from '@/app/_navbar/navbar.store';
 
 type NavItemProps = NavItemType &
   ComponentPropsWithRef<'li'> & {

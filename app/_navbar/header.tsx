@@ -1,12 +1,12 @@
 'use client';
 
 import { AppIcon } from '@/icons/AppIcon';
-import { NavItem } from '@/app/(navbar)/nav-item';
+import { NavItem } from '@/app/_navbar/nav-item';
 import { useMediaQuery } from '@/hooks/useMediaQuery';
-import { navItems } from '@/app/(navbar)/navbar.data';
-import { ModeToggle } from '@/app/(theme)/mode-toggle';
-import { BurgerMenu } from '@/app/(navbar)/burger-menu';
-import { useNavbarStore } from '@/app/(navbar)/navbar.store';
+import { navItems } from '@/app/_navbar/navbar.data';
+import { ModeToggle } from '@/app/_theme/mode-toggle';
+import { BurgerMenu } from '@/app/_navbar/burger-menu';
+import { useNavbarStore } from '@/app/_navbar/navbar.store';
 
 export const Header = () => {
   const isDesktop = useMediaQuery();

@@ -3,9 +3,9 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import { BurgerIcon } from '@/icons/BurgerIcon';
-import { NavItem } from '@/app/(navbar)/nav-item';
-import { navItems } from '@/app/(navbar)/navbar.data';
-import { Hash, useNavbarStore } from '@/app/(navbar)/navbar.store';
+import { NavItem } from '@/app/_navbar/nav-item';
+import { navItems } from '@/app/_navbar/navbar.data';
+import { Hash, useNavbarStore } from '@/app/_navbar/navbar.store';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 
 export const BurgerMenu = () => {
