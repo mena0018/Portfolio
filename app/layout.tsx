@@ -29,7 +29,6 @@ export default function RootLayout({ children }: PropsWithChildren) {
         )}
       >
         <ThemeProvider
-          enableSystem
           attribute='class'
           defaultTheme='dark'
           disableTransitionOnChange
