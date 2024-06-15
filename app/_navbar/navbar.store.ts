@@ -4,6 +4,7 @@ export enum Hash {
   About = '#about',
   Skills = '#skills',
   Projects = '#projects',
+  Planning = '#planning',
   Contact = '#contact',
 }
 
@@ -11,6 +12,7 @@ export enum NavbarItem {
   About = 'About',
   Skills = 'Skills',
   Projects = 'Projects',
+  Planning = 'Planning',
   Contact = 'Contact',
 }
 

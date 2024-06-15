@@ -17,7 +17,7 @@ export const Header = () => {
       <div className='w-full h-full max-w-container mx-auto flex items-center justify-between gap-1 px-4 xl:px-0'>
         <AppIcon />
 
-        <ul className='h-12 flex flex-1 items-center justify-between border-2 border-accent bg-primary-foreground rounded-full px-6 md:max-w-[400px]'>
+        <ul className='h-12 flex flex-1 items-center justify-between border-2 border-accent bg-primary-foreground rounded-full px-6 md:max-w-[485px]'>
           {isDesktop ? (
             navItems.map((item) => (
               <NavItem

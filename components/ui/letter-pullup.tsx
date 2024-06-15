@@ -26,7 +26,7 @@ export function LetterPullUp({
   };
 
   return (
-    <div className='flex justify-center'>
+    <div className='flex justify-center w-fit'>
       {letters.map((letter, i) => (
         <motion.h1
           key={i}

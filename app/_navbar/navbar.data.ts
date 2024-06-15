@@ -25,6 +25,11 @@ export const navItems: Array<NavItemType> = [
   },
   {
     id: uuidv4(),
+    href: Hash.Planning,
+    label: NavbarItem.Planning,
+  },
+  {
+    id: uuidv4(),
     href: Hash.Contact,
     label: NavbarItem.Contact,
   },
