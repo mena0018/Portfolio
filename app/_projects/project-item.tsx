@@ -8,7 +8,7 @@ export const ProjectItem = ({ link, title, description, imgUrl }: Project) => {
   return (
     <CarouselItem className='pl-4 basis-full sm:basis-1/2'>
       <Card className='group relative h-full min-h-44'>
-        <Link href={link}>
+        <Link href={link} target='_blank'>
           <CardContent className='p-0 h-full select-none'>
             <div className='absolute inset-0 rounded-lg'>
               <img
@@ -28,6 +28,7 @@ export const ProjectItem = ({ link, title, description, imgUrl }: Project) => {
               <span
                 className={cn('text-sm text-secondary', {
                   'text-accent': title === ProjectTitle.URLShortening,
+                  'text-foreground/85': title === ProjectTitle.FilterSystem,
                 })}
               >
                 {description}

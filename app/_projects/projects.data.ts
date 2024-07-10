@@ -6,10 +6,10 @@ import FilterSystem from '@/public/images/projects/filter-system.webp';
 
 export enum ProjectTitle {
   Metaversus = 'Metaversus',
-  Trading = 'Trading-Site',
+  Trading = 'Trading Site',
   URLShortening = 'URL Shortening',
   CountDown = 'CountDown',
-  FilterSystem = 'FilterSystem',
+  FilterSystem = 'Filter System',
 }
 
 export type Project = {
