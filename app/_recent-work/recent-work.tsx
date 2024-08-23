@@ -1,8 +1,8 @@
 import ivsLogo from '@/public/images/company/ivs-company.jpeg';
 import erevoLogo from '@/public/images/company/erevo-logo.jpeg';
 import ideineLogo from '@/public/images/company/ideine-logo.jpeg';
-import inraeLogo from '@/public/images/company/inrae-logo.jpeg';
-import { WorkItem } from '@/app/_skills/work-item';
+import frontEndMentorLogo from '@/public/images/company/frontend-mentor-logo.png';
+import { WorkItem } from '@/app/_recent-work/work-item';
 
 export const RecentWork = () => {
   return (
@@ -29,10 +29,9 @@ export const RecentWork = () => {
           logo={ivsLogo.src}
         />
         <WorkItem
-          role='FullStack'
-          date='March 2022 - June 2022'
-          company='INRAE'
-          logo={inraeLogo.src}
+          date='Sept 2020 - June 2022'
+          company='FEM'
+          logo={frontEndMentorLogo.src}
         />
       </ul>
     </div>
