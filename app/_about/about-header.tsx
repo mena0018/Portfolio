@@ -1,5 +1,5 @@
 import { AvailableBadge } from '@/components/available-badge';
-import { LetterPullUp } from '@/components/ui/letter-pullup';
+import { LetterPullUp } from '@/components/letter-pullup';
 
 export const AboutHeader = () => {
   return (

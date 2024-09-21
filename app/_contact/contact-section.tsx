@@ -3,7 +3,7 @@ import Image from 'next/image';
 import avatar from '@/public/images/avatar-blue.webp';
 import { Section } from '@/components/section';
 import { AvailableBadge } from '@/components/available-badge';
-import { HoverBorderGradient } from '@/components/ui/hover-border-gradient';
+import { HoverBorderGradient } from '@/components/hover-border-gradient';
 
 export const ContactSection = () => {
   return (

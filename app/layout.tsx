@@ -7,7 +7,7 @@ import { Rubik } from 'next/font/google';
 import { PropsWithChildren } from 'react';
 import { GeistSans } from 'geist/font/sans';
 import { GeistMono } from 'geist/font/mono';
-import { baseMetadata } from '@/app/metadata';
+import { baseMetadata } from '@/config/metadata';
 import { Header } from '@/app/_navbar/header';
 import { GoogleAnalytics } from '@next/third-parties/google';
 import { ThemeProvider } from '@/app/_theme/theme-provider';

@@ -1,7 +1,7 @@
 import { Section } from '@/components/section';
-import { SparklesText } from '@/components/ui/text-sparkles';
+import { SparklesText } from '@/components/text-sparkles';
 import { PlanningEmbed } from '@/app/_planning/planning-embed';
-import { TextGenerateEffect } from '@/components/ui/text-generate-effect';
+import { TextGenerateEffect } from '@/components/text-generate-effect';
 
 export const PlanningSection = () => {
   return (
