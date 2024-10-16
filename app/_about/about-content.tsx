@@ -11,6 +11,7 @@ import { DuplicateIcon } from '@/icons/DuplicateIcon';
 import { ApplicationIcon } from '@/icons/ApplicationIcon';
 import { useCopyToClipboard } from '@/hooks/useCopyToClipboard';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import Link from 'next/link';
 
 export const AboutContent = () => {
   const { isCopied, copyToClipboard } = useCopyToClipboard();
@@ -38,13 +39,7 @@ export const AboutContent = () => {
           </Code>
         </p>
         <div className='flex gap-2'>
-          <a
-            download
-            target='_blank'
-            href='assets/cv.pdf'
-            rel='noopener noreferrer'
-            className='flex gap-[2px]'
-          >
+          <Link href='#planning' className='flex gap-[2px]'>
             <Button
               variant='none'
               aria-label='cta-btn'
@@ -59,7 +54,7 @@ export const AboutContent = () => {
             >
               <PlusIcon />
             </Button>
-          </a>
+          </Link>
 
           <div className='flex gap-[2px]' onClick={() => copyToClipboard()}>
             <Button
