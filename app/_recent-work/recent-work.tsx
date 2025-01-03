@@ -1,7 +1,7 @@
-import ivsLogo from '@/public/images/company/ivs-company.jpeg';
-import erevoLogo from '@/public/images/company/erevo-logo.jpeg';
-import ideineLogo from '@/public/images/company/ideine-logo.jpeg';
-import frontEndMentorLogo from '@/public/images/company/frontend-mentor-logo.png';
+import ivsLogo from '@/public/images/company/ivs.webp';
+import decathlonLogo from '@/public/images/company/decathlon.webp';
+import ideineLogo from '@/public/images/company/ideine.webp';
+import frontEndMentorLogo from '@/public/images/company/frontend-mentor.webp';
 import { WorkItem } from '@/app/_recent-work/work-item';
 
 export const RecentWork = () => {
@@ -14,14 +14,14 @@ export const RecentWork = () => {
 
       <ul className='flex flex-col gap-5 md:gap-9'>
         <WorkItem
-          date='Sept 2023 - Present'
-          company='IDÉINE'
-          logo={ideineLogo.src}
+          date='Sept 2024 - Present'
+          company='DKT'
+          logo={decathlonLogo.src}
         />
         <WorkItem
-          date='March 2023 - July 2023'
-          company='EREVO'
-          logo={erevoLogo.src}
+          date='Sept 2023 - Sept 2024'
+          company='IDÉINE'
+          logo={ideineLogo.src}
         />
         <WorkItem
           date='June 2022 - Sept 2023'
