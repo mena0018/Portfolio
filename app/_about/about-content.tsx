@@ -66,7 +66,7 @@ export const AboutContent = () => {
             <Button
               variant='none'
               aria-label='cta-btn'
-              className='rounded-none rounded-tr-sm rounded-br-sm px-1 shimmer-btn'
+              className='rounded-none rounded-tr-sm rounded-br-sm px-1 shimmer-btn border-l-0'
             >
               {isCopied ? <CheckIcon /> : <DuplicateIcon />}
             </Button>

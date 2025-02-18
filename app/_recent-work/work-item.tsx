@@ -23,7 +23,7 @@ export const WorkItem = ({
         <img
           src={logo}
           alt='company logo'
-          className='w-9 h-9 md:w-12 md:h-12 rounded-full ring'
+          className='w-9 h-9 aspect-square md:w-12 md:h-12 rounded-full ring'
         />
         <p className='text-secondary font-medium'>{company}</p>
       </div>
